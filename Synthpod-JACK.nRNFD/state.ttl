@@ -14,7 +14,7 @@
 	a pset:Preset ;
 	lv2:appliesTo spod:stereo ,
 		spod:monoatom ;
-	rdfs:label "/home/johan/NSM Sessions/05_setup/Synthpod-JACK.nSVGO" ;
+	rdfs:label "/home/johan/NSM Sessions/05_setup/Synthpod-JACK.nRNFD" ;
 	state:state [
 		lv2:minorVersion "1"^^xsd:int ;
 		lv2:microVersion "6131"^^xsd:int ;
