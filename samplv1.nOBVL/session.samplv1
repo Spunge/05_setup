@@ -2,11 +2,11 @@
 <preset name="session" version="0.9.10">
  <samples>
   <sample name="GEN1_SAMPLE" index="0">
-   <filename>BD7500-863942da.WAV</filename>
+   <filename>F064-7730cee7.wav</filename>
    <offset-start>0</offset-start>
-   <offset-end>11026</offset-end>
+   <offset-end>42074</offset-end>
    <loop-start>0</loop-start>
-   <loop-end>11026</loop-end>
+   <loop-end>42074</loop-end>
    <loop-fade>0</loop-fade>
    <loop-zero>1</loop-zero>
   </sample>
@@ -16,10 +16,10 @@
   <param name="GEN1_REVERSE" index="1">0</param>
   <param name="GEN1_OFFSET" index="2">0</param>
   <param name="GEN1_OFFSET_1" index="3">0</param>
-  <param name="GEN1_OFFSET_2" index="4">0.923992</param>
+  <param name="GEN1_OFFSET_2" index="4">1</param>
   <param name="GEN1_LOOP" index="5">0</param>
   <param name="GEN1_LOOP_1" index="6">0</param>
-  <param name="GEN1_LOOP_2" index="7">0.923992</param>
+  <param name="GEN1_LOOP_2" index="7">1</param>
   <param name="GEN1_OCTAVE" index="8">0</param>
   <param name="GEN1_TUNING" index="9">0</param>
   <param name="GEN1_GLIDE" index="10">0</param>

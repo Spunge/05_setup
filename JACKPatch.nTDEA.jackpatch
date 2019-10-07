@@ -1,3 +1,5 @@
+Firefox Developer Edition:AudioStream_0_out_0 |> system:playback_1
+Firefox Developer Edition:AudioStream_0_out_1 |> system:playback_2
 Non-Mixer.nSOHG (percussion):port0/out-1 |> Non-Mixer.nSOHG/master:in-1
 Non-Mixer.nSOHG (percussion):port0/out-2 |> Non-Mixer.nSOHG/master:in-2
 Non-Mixer.nSOHG (percussion):port1/out-1 |> Non-Mixer.nSOHG/master:in-1

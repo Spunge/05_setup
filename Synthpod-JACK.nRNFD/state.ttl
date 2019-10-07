@@ -32,13 +32,13 @@
 			<urn:uuid:d0b9f5db-b8c6-4e30-98c1-33af853adad7> [
 				a <http://gareus.org/oss/lv2/darc#stereo> ;
 				spod:modulePositionX "407.0"^^xsd:float ;
-				spod:modulePositionY "283.0"^^xsd:float ;
-				ui:ui <http://gareus.org/oss/lv2/darc#ui_gl>
+				spod:modulePositionY "283.0"^^xsd:float
 			] ;
 			<urn:uuid:80eddcf7-8916-4fb5-8859-27c8231f388d> [
 				a <urn:dragonfly:room> ;
 				spod:modulePositionX "653.0"^^xsd:float ;
-				spod:modulePositionY "279.0"^^xsd:float
+				spod:modulePositionY "279.0"^^xsd:float ;
+				ui:ui <urn:dragonfly:room#UI>
 			] ;
 			<urn:uuid:416360c5-6738-4df8-b083-de9a3550b80f> [
 				a spod:sink ;
@@ -526,7 +526,7 @@
 		] ;
 		spod:graphPositionX "-334.0"^^xsd:float ;
 		spod:graphPositionY "-169.0"^^xsd:float ;
-		spod:columnEnabled true ;
+		spod:columnEnabled false ;
 		spod:rowEnabled false
 	] .
 
