@@ -33,10 +33,10 @@
 		pset:value 0.0
 	] , [
 		lv2:symbol "in_high_cut" ;
-		pset:value 16000.0
+		pset:value 3598.42529297
 	] , [
 		lv2:symbol "in_low_cut" ;
-		pset:value 4.0
+		pset:value 34.64566803
 	] , [
 		lv2:symbol "late_damp" ;
 		pset:value 8500.0
