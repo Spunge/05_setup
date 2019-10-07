@@ -1,0 +1,14 @@
+Non-Mixer.nSOHG (percussion):port0/out-1 |> Non-Mixer.nSOHG/master:in-1
+Non-Mixer.nSOHG (percussion):port0/out-2 |> Non-Mixer.nSOHG/master:in-2
+Non-Mixer.nSOHG (percussion):port1/out-1 |> Non-Mixer.nSOHG/master:in-1
+Non-Mixer.nSOHG (percussion):port1/out-2 |> Non-Mixer.nSOHG/master:in-2
+Non-Mixer.nSOHG/master:out-1             |> system:playback_1
+Non-Mixer.nSOHG/master:out-2             |> system:playback_2
+Octothorpe:apc_out                       |> system:midi_playback_3
+Octothorpe:sequence_out                  |> samplv1.nOBVL:in
+Synthpod-JACK.nSVGO:#83072_audio_source_1 |> Non-Mixer.nSOHG (percussion):port0/in-1
+Synthpod-JACK.nSVGO:#83072_audio_source_2 |> Non-Mixer.nSOHG (percussion):port0/in-2
+samplv1.nOBVL:out_1                      |> Synthpod-JACK.nSVGO:#18548_audio_sink_1
+samplv1.nOBVL:out_2                      |> Synthpod-JACK.nSVGO:#18548_audio_sink_2
+system:midi_capture_1                    |> Octothorpe:sequence_in
+system:midi_capture_5                    |> Octothorpe:apc_in
