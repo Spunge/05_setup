@@ -1,6 +1,16 @@
 <!DOCTYPE samplv1>
 <preset name="session" version="0.9.10">
- <samples/>
+ <samples>
+  <sample index="0" name="GEN1_SAMPLE">
+   <filename>SD7510-97820d19.WAV</filename>
+   <offset-start>0</offset-start>
+   <offset-end>23933</offset-end>
+   <loop-start>0</loop-start>
+   <loop-end>23933</loop-end>
+   <loop-fade>0</loop-fade>
+   <loop-zero>1</loop-zero>
+  </sample>
+ </samples>
  <params>
   <param index="0" name="GEN1_SAMPLE">60</param>
   <param index="1" name="GEN1_REVERSE">0</param>
@@ -10,10 +20,10 @@
   <param index="5" name="GEN1_LOOP">0</param>
   <param index="6" name="GEN1_LOOP_1">0</param>
   <param index="7" name="GEN1_LOOP_2">1</param>
-  <param index="8" name="GEN1_OCTAVE">0</param>
+  <param index="8" name="GEN1_OCTAVE">1.44</param>
   <param index="9" name="GEN1_TUNING">0</param>
   <param index="10" name="GEN1_GLIDE">0</param>
-  <param index="11" name="GEN1_ENVTIME">0.5</param>
+  <param index="11" name="GEN1_ENVTIME">0.16</param>
   <param index="12" name="DCF1_ENABLED">1</param>
   <param index="13" name="DCF1_CUTOFF">1</param>
   <param index="14" name="DCF1_RESO">0</param>
@@ -54,7 +64,7 @@
   <param index="49" name="DEF1_MODWHEEL">0.2</param>
   <param index="50" name="DEF1_PRESSURE">0.2</param>
   <param index="51" name="DEF1_VELOCITY">0.2</param>
-  <param index="52" name="DEF1_CHANNEL">0</param>
+  <param index="52" name="DEF1_CHANNEL">2</param>
   <param index="53" name="DEF1_MONO">0</param>
   <param index="54" name="CHO1_WET">0</param>
   <param index="55" name="CHO1_DELAY">0.5</param>

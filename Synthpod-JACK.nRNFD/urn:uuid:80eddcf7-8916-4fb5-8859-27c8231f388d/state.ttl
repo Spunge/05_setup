@@ -15,10 +15,10 @@
 		pset:value 333.46456909
 	] , [
 		lv2:symbol "decay" ;
-		pset:value 2.59448814
+		pset:value 0.72362202
 	] , [
 		lv2:symbol "diffuse" ;
-		pset:value 54.33070755
+		pset:value 0.0
 	] , [
 		lv2:symbol "dry_level" ;
 		pset:value 100.0
@@ -27,13 +27,13 @@
 		pset:value 6078.74023438
 	] , [
 		lv2:symbol "early_level" ;
-		pset:value 3.14960623
+		pset:value 24.40944862
 	] , [
 		lv2:symbol "early_send" ;
-		pset:value 0.0
+		pset:value 42.51968384
 	] , [
 		lv2:symbol "in_high_cut" ;
-		pset:value 3598.42529297
+		pset:value 16000.0
 	] , [
 		lv2:symbol "in_low_cut" ;
 		pset:value 34.64566803
@@ -42,25 +42,25 @@
 		pset:value 5842.51953125
 	] , [
 		lv2:symbol "late_level" ;
-		pset:value 3.14960623
+		pset:value 15.74803162
 	] , [
 		lv2:symbol "low_boost" ;
-		pset:value 86.61417389
+		pset:value 49.60630035
 	] , [
 		lv2:symbol "predelay" ;
-		pset:value 4.72440958
+		pset:value 14.17322826
 	] , [
 		lv2:symbol "size" ;
-		pset:value 10.64566898
+		pset:value 11.96850395
 	] , [
 		lv2:symbol "spin" ;
 		pset:value 0.40000001
 	] , [
 		lv2:symbol "wander" ;
-		pset:value 77.95275879
+		pset:value 1.57480311
 	] , [
 		lv2:symbol "width" ;
-		pset:value 50.0
+		pset:value 56.29921341
 	] ;
 	state:state [
 		<urn:distrho:preset> "Large Clear Room"

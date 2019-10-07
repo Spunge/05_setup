@@ -32,7 +32,8 @@
 			<urn:uuid:d0b9f5db-b8c6-4e30-98c1-33af853adad7> [
 				a <http://gareus.org/oss/lv2/darc#stereo> ;
 				spod:modulePositionX "407.0"^^xsd:float ;
-				spod:modulePositionY "283.0"^^xsd:float
+				spod:modulePositionY "283.0"^^xsd:float ;
+				ui:ui <http://gareus.org/oss/lv2/darc#ui_gl>
 			] ;
 			<urn:uuid:80eddcf7-8916-4fb5-8859-27c8231f388d> [
 				a <urn:dragonfly:room> ;

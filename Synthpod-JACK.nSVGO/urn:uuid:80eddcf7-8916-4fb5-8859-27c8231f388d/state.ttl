@@ -27,7 +27,7 @@
 		pset:value 6078.74023438
 	] , [
 		lv2:symbol "early_level" ;
-		pset:value 3.14960623
+		pset:value 0.0
 	] , [
 		lv2:symbol "early_send" ;
 		pset:value 0.0
@@ -42,7 +42,7 @@
 		pset:value 5842.51953125
 	] , [
 		lv2:symbol "late_level" ;
-		pset:value 3.14960623
+		pset:value 0.0
 	] , [
 		lv2:symbol "low_boost" ;
 		pset:value 86.61417389
