@@ -2,11 +2,11 @@
 <preset name="session" version="0.9.10">
  <samples>
   <sample name="GEN1_SAMPLE" index="0">
-   <filename>BD2500-7ed3627f.WAV</filename>
+   <filename>BD7500-863942da.WAV</filename>
    <offset-start>0</offset-start>
-   <offset-end>11932</offset-end>
+   <offset-end>11933</offset-end>
    <loop-start>0</loop-start>
-   <loop-end>11932</loop-end>
+   <loop-end>11933</loop-end>
    <loop-fade>0</loop-fade>
    <loop-zero>1</loop-zero>
   </sample>
@@ -59,7 +59,7 @@
   <param name="OUT1_WIDTH" index="44">0</param>
   <param name="OUT1_PANNING" index="45">0</param>
   <param name="OUT1_FXSEND" index="46">1</param>
-  <param name="OUT1_VOLUME" index="47">1</param>
+  <param name="OUT1_VOLUME" index="47">0.5</param>
   <param name="DEF1_PITCHBEND" index="48">0.2</param>
   <param name="DEF1_MODWHEEL" index="49">0.2</param>
   <param name="DEF1_PRESSURE" index="50">0.2</param>

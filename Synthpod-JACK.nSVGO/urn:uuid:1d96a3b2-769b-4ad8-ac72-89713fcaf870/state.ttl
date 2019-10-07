@@ -15,34 +15,34 @@
 		pset:value 0.69999999
 	] , [
 		lv2:symbol "HPfreq" ;
-		pset:value 20.0
+		pset:value 50.18612671
 	] , [
 		lv2:symbol "HSfreq" ;
-		pset:value 8000.0
+		pset:value 2589.63354492
 	] , [
 		lv2:symbol "HSgain" ;
-		pset:value 0.0
+		pset:value 6.0
 	] , [
 		lv2:symbol "HSq" ;
-		pset:value 1.0
+		pset:value 0.0625
 	] , [
 		lv2:symbol "HSsec" ;
 		pset:value true
 	] , [
 		lv2:symbol "HighPass" ;
-		pset:value false
+		pset:value true
 	] , [
 		lv2:symbol "LPQ" ;
-		pset:value 1.0
+		pset:value 0.99727833
 	] , [
 		lv2:symbol "LPfreq" ;
 		pset:value 20000.0
 	] , [
 		lv2:symbol "LSfreq" ;
-		pset:value 80.0
+		pset:value 282.25183105
 	] , [
 		lv2:symbol "LSgain" ;
-		pset:value 0.0
+		pset:value 9.0
 	] , [
 		lv2:symbol "LSq" ;
 		pset:value 1.0
@@ -51,22 +51,22 @@
 		pset:value true
 	] , [
 		lv2:symbol "LowPass" ;
-		pset:value false
+		pset:value true
 	] , [
 		lv2:symbol "enable" ;
 		pset:value true
 	] , [
 		lv2:symbol "freq1" ;
-		pset:value 160.0
+		pset:value 159.99998474
 	] , [
 		lv2:symbol "freq2" ;
-		pset:value 397.0
+		pset:value 397.00009155
 	] , [
 		lv2:symbol "freq3" ;
-		pset:value 1250.0
+		pset:value 1250.00012207
 	] , [
 		lv2:symbol "freq4" ;
-		pset:value 2500.0
+		pset:value 2500.00024414
 	] , [
 		lv2:symbol "gain" ;
 		pset:value 0.0
@@ -87,16 +87,16 @@
 		pset:value true
 	] , [
 		lv2:symbol "q1" ;
-		pset:value 0.60000002
+		pset:value 0.60151249
 	] , [
 		lv2:symbol "q2" ;
-		pset:value 0.60000002
+		pset:value 0.60151249
 	] , [
 		lv2:symbol "q3" ;
-		pset:value 0.60000002
+		pset:value 0.60151249
 	] , [
 		lv2:symbol "q4" ;
-		pset:value 0.60000002
+		pset:value 0.60151249
 	] , [
 		lv2:symbol "sec1" ;
 		pset:value true

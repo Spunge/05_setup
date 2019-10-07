@@ -29,16 +29,15 @@
 				spod:modulePositionX "-118.0"^^xsd:float ;
 				spod:modulePositionY "284.0"^^xsd:float
 			] ;
-			<urn:uuid:d0b9f5db-b8c6-4e30-98c1-33af853adad7> [
-				a <http://gareus.org/oss/lv2/darc#stereo> ;
-				spod:modulePositionX "170.0"^^xsd:float ;
-				spod:modulePositionY "285.0"^^xsd:float ;
-				ui:ui <http://gareus.org/oss/lv2/darc#ui_gl>
-			] ;
 			<urn:uuid:1d96a3b2-769b-4ad8-ac72-89713fcaf870> [
 				a <http://gareus.org/oss/lv2/fil4#stereo> ;
-				spod:modulePositionX "421.0"^^xsd:float ;
-				spod:modulePositionY "281.0"^^xsd:float
+				spod:modulePositionX "147.0"^^xsd:float ;
+				spod:modulePositionY "284.0"^^xsd:float
+			] ;
+			<urn:uuid:d0b9f5db-b8c6-4e30-98c1-33af853adad7> [
+				a <http://gareus.org/oss/lv2/darc#stereo> ;
+				spod:modulePositionX "407.0"^^xsd:float ;
+				spod:modulePositionY "283.0"^^xsd:float
 			] ;
 			<urn:uuid:80eddcf7-8916-4fb5-8859-27c8231f388d> [
 				a <urn:dragonfly:room> ;
@@ -62,35 +61,35 @@
 				[
 					spod:sourceModule <urn:uuid:30a04b97-d9a8-4049-ac6e-e361be9c7086> ;
 					spod:sourceSymbol "audio_source_1" ;
-					spod:sinkModule <urn:uuid:d0b9f5db-b8c6-4e30-98c1-33af853adad7> ;
+					spod:sinkModule <urn:uuid:1d96a3b2-769b-4ad8-ac72-89713fcaf870> ;
 					spod:sinkSymbol "inL" ;
 					param:gain "1.0"^^xsd:float
 				] [
 					spod:sourceModule <urn:uuid:30a04b97-d9a8-4049-ac6e-e361be9c7086> ;
 					spod:sourceSymbol "audio_source_2" ;
+					spod:sinkModule <urn:uuid:1d96a3b2-769b-4ad8-ac72-89713fcaf870> ;
+					spod:sinkSymbol "inR" ;
+					param:gain "1.0"^^xsd:float
+				] [
+					spod:sourceModule <urn:uuid:1d96a3b2-769b-4ad8-ac72-89713fcaf870> ;
+					spod:sourceSymbol "outL" ;
+					spod:sinkModule <urn:uuid:d0b9f5db-b8c6-4e30-98c1-33af853adad7> ;
+					spod:sinkSymbol "inL" ;
+					param:gain "1.0"^^xsd:float
+				] [
+					spod:sourceModule <urn:uuid:1d96a3b2-769b-4ad8-ac72-89713fcaf870> ;
+					spod:sourceSymbol "outR" ;
 					spod:sinkModule <urn:uuid:d0b9f5db-b8c6-4e30-98c1-33af853adad7> ;
 					spod:sinkSymbol "inR" ;
 					param:gain "1.0"^^xsd:float
 				] [
 					spod:sourceModule <urn:uuid:d0b9f5db-b8c6-4e30-98c1-33af853adad7> ;
 					spod:sourceSymbol "outL" ;
-					spod:sinkModule <urn:uuid:1d96a3b2-769b-4ad8-ac72-89713fcaf870> ;
-					spod:sinkSymbol "inL" ;
-					param:gain "1.0"^^xsd:float
-				] [
-					spod:sourceModule <urn:uuid:d0b9f5db-b8c6-4e30-98c1-33af853adad7> ;
-					spod:sourceSymbol "outR" ;
-					spod:sinkModule <urn:uuid:1d96a3b2-769b-4ad8-ac72-89713fcaf870> ;
-					spod:sinkSymbol "inR" ;
-					param:gain "1.0"^^xsd:float
-				] [
-					spod:sourceModule <urn:uuid:1d96a3b2-769b-4ad8-ac72-89713fcaf870> ;
-					spod:sourceSymbol "outL" ;
 					spod:sinkModule <urn:uuid:80eddcf7-8916-4fb5-8859-27c8231f388d> ;
 					spod:sinkSymbol "lv2_audio_in_1" ;
 					param:gain "1.0"^^xsd:float
 				] [
-					spod:sourceModule <urn:uuid:1d96a3b2-769b-4ad8-ac72-89713fcaf870> ;
+					spod:sourceModule <urn:uuid:d0b9f5db-b8c6-4e30-98c1-33af853adad7> ;
 					spod:sourceSymbol "outR" ;
 					spod:sinkModule <urn:uuid:80eddcf7-8916-4fb5-8859-27c8231f388d> ;
 					spod:sinkSymbol "lv2_audio_in_2" ;
@@ -115,16 +114,16 @@
 			rdf:value (
 				[
 					spod:sourceModule <urn:uuid:30a04b97-d9a8-4049-ac6e-e361be9c7086> ;
-					spod:sinkModule <urn:uuid:d0b9f5db-b8c6-4e30-98c1-33af853adad7> ;
-					spod:nodePositionX "0.0"^^xsd:float ;
-					spod:nodePositionY "0.0"^^xsd:float
-				] [
-					spod:sourceModule <urn:uuid:d0b9f5db-b8c6-4e30-98c1-33af853adad7> ;
 					spod:sinkModule <urn:uuid:1d96a3b2-769b-4ad8-ac72-89713fcaf870> ;
 					spod:nodePositionX "0.0"^^xsd:float ;
 					spod:nodePositionY "0.0"^^xsd:float
 				] [
 					spod:sourceModule <urn:uuid:1d96a3b2-769b-4ad8-ac72-89713fcaf870> ;
+					spod:sinkModule <urn:uuid:d0b9f5db-b8c6-4e30-98c1-33af853adad7> ;
+					spod:nodePositionX "0.0"^^xsd:float ;
+					spod:nodePositionY "0.0"^^xsd:float
+				] [
+					spod:sourceModule <urn:uuid:d0b9f5db-b8c6-4e30-98c1-33af853adad7> ;
 					spod:sinkModule <urn:uuid:80eddcf7-8916-4fb5-8859-27c8231f388d> ;
 					spod:nodePositionX "0.0"^^xsd:float ;
 					spod:nodePositionY "0.0"^^xsd:float
