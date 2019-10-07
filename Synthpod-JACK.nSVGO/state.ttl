@@ -27,19 +27,18 @@
 			<urn:uuid:1d96a3b2-769b-4ad8-ac72-89713fcaf870> [
 				a <http://gareus.org/oss/lv2/fil4#stereo> ;
 				spod:modulePositionX "147.0"^^xsd:float ;
-				spod:modulePositionY "284.0"^^xsd:float ;
-				ui:ui <http://gareus.org/oss/lv2/fil4#ui_gl>
+				spod:modulePositionY "284.0"^^xsd:float
 			] ;
 			<urn:uuid:d0b9f5db-b8c6-4e30-98c1-33af853adad7> [
 				a <http://gareus.org/oss/lv2/darc#stereo> ;
 				spod:modulePositionX "407.0"^^xsd:float ;
-				spod:modulePositionY "283.0"^^xsd:float ;
-				ui:ui <http://gareus.org/oss/lv2/darc#ui_gl>
+				spod:modulePositionY "283.0"^^xsd:float
 			] ;
 			<urn:uuid:80eddcf7-8916-4fb5-8859-27c8231f388d> [
 				a <urn:dragonfly:room> ;
 				spod:modulePositionX "653.0"^^xsd:float ;
-				spod:modulePositionY "279.0"^^xsd:float
+				spod:modulePositionY "279.0"^^xsd:float ;
+				ui:ui <urn:dragonfly:room#UI>
 			] ;
 			<urn:uuid:416360c5-6738-4df8-b083-de9a3550b80f> [
 				a spod:sink ;
@@ -230,10 +229,58 @@
 					spod:sourceMinimum "0.0"^^xsd:double ;
 					spod:sourceMaximum "127.0"^^xsd:double ;
 					spod:sinkMinimum "0.0"^^xsd:double ;
-					spod:sinkMaximum "1.3999999761581421"^^xsd:double ;
+					spod:sinkMaximum "1.3999999761581419"^^xsd:double ;
 					spod:sourceEnabled true ;
 					spod:sinkEnabled true ;
 					spod:sinkSymbol "HPQ"
+				] [
+					a midi:Controller ;
+					spod:sinkModule <urn:uuid:1d96a3b2-769b-4ad8-ac72-89713fcaf870> ;
+					midi:channel "0"^^xsd:int ;
+					midi:controllerNumber "2"^^xsd:int ;
+					spod:sourceMinimum "0.0"^^xsd:double ;
+					spod:sourceMaximum "127.0"^^xsd:double ;
+					spod:sinkMinimum "1000.0"^^xsd:double ;
+					spod:sinkMaximum "16000.0"^^xsd:double ;
+					spod:sourceEnabled true ;
+					spod:sinkEnabled true ;
+					spod:sinkSymbol "HSfreq"
+				] [
+					a midi:Controller ;
+					spod:sinkModule <urn:uuid:1d96a3b2-769b-4ad8-ac72-89713fcaf870> ;
+					midi:channel "0"^^xsd:int ;
+					midi:controllerNumber "3"^^xsd:int ;
+					spod:sourceMinimum "0.0"^^xsd:double ;
+					spod:sourceMaximum "127.0"^^xsd:double ;
+					spod:sinkMinimum "500.0"^^xsd:double ;
+					spod:sinkMaximum "20000.0"^^xsd:double ;
+					spod:sourceEnabled true ;
+					spod:sinkEnabled true ;
+					spod:sinkSymbol "LPfreq"
+				] [
+					a midi:Controller ;
+					spod:sinkModule <urn:uuid:1d96a3b2-769b-4ad8-ac72-89713fcaf870> ;
+					midi:channel "0"^^xsd:int ;
+					midi:controllerNumber "6"^^xsd:int ;
+					spod:sourceMinimum "0.0"^^xsd:double ;
+					spod:sourceMaximum "127.0"^^xsd:double ;
+					spod:sinkMinimum "0.0625"^^xsd:double ;
+					spod:sinkMaximum "4.0"^^xsd:double ;
+					spod:sourceEnabled true ;
+					spod:sinkEnabled true ;
+					spod:sinkSymbol "HSq"
+				] [
+					a midi:Controller ;
+					spod:sinkModule <urn:uuid:1d96a3b2-769b-4ad8-ac72-89713fcaf870> ;
+					midi:channel "0"^^xsd:int ;
+					midi:controllerNumber "7"^^xsd:int ;
+					spod:sourceMinimum "0.0"^^xsd:double ;
+					spod:sourceMaximum "127.0"^^xsd:double ;
+					spod:sinkMinimum "-18.0"^^xsd:double ;
+					spod:sinkMaximum "18.0"^^xsd:double ;
+					spod:sourceEnabled true ;
+					spod:sinkEnabled true ;
+					spod:sinkSymbol "HSgain"
 				] [
 					a midi:Controller ;
 					spod:sinkModule <urn:uuid:d0b9f5db-b8c6-4e30-98c1-33af853adad7> ;
@@ -294,6 +341,42 @@
 					spod:sourceEnabled true ;
 					spod:sinkEnabled true ;
 					spod:sinkSymbol "dry_level"
+				] [
+					a midi:Controller ;
+					spod:sinkModule <urn:uuid:80eddcf7-8916-4fb5-8859-27c8231f388d> ;
+					midi:channel "0"^^xsd:int ;
+					midi:controllerNumber "17"^^xsd:int ;
+					spod:sourceMinimum "0.0"^^xsd:double ;
+					spod:sourceMaximum "127.0"^^xsd:double ;
+					spod:sinkMinimum "0.0"^^xsd:double ;
+					spod:sinkMaximum "100.0"^^xsd:double ;
+					spod:sourceEnabled true ;
+					spod:sinkEnabled true ;
+					spod:sinkSymbol "early_level"
+				] [
+					a midi:Controller ;
+					spod:sinkModule <urn:uuid:80eddcf7-8916-4fb5-8859-27c8231f388d> ;
+					midi:channel "0"^^xsd:int ;
+					midi:controllerNumber "18"^^xsd:int ;
+					spod:sourceMinimum "0.0"^^xsd:double ;
+					spod:sourceMaximum "127.0"^^xsd:double ;
+					spod:sinkMinimum "0.0"^^xsd:double ;
+					spod:sinkMaximum "100.0"^^xsd:double ;
+					spod:sourceEnabled true ;
+					spod:sinkEnabled true ;
+					spod:sinkSymbol "early_send"
+				] [
+					a midi:Controller ;
+					spod:sinkModule <urn:uuid:80eddcf7-8916-4fb5-8859-27c8231f388d> ;
+					midi:channel "0"^^xsd:int ;
+					midi:controllerNumber "19"^^xsd:int ;
+					spod:sourceMinimum "0.0"^^xsd:double ;
+					spod:sourceMaximum "127.0"^^xsd:double ;
+					spod:sinkMinimum "0.0"^^xsd:double ;
+					spod:sinkMaximum "100.0"^^xsd:double ;
+					spod:sourceEnabled true ;
+					spod:sinkEnabled true ;
+					spod:sinkSymbol "late_level"
 				]
 			)
 		] ;

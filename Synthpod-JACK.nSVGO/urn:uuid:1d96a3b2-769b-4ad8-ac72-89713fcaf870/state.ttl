@@ -12,19 +12,19 @@
 	rdfs:label "state" ;
 	lv2:port [
 		lv2:symbol "HPQ" ;
-		pset:value 0.98110235
+		pset:value 1.39999998
 	] , [
 		lv2:symbol "HPfreq" ;
 		pset:value 44.21259689
 	] , [
 		lv2:symbol "HSfreq" ;
-		pset:value 2589.63330078
+		pset:value 1354.33068848
 	] , [
 		lv2:symbol "HSgain" ;
-		pset:value 6.0
+		pset:value 1.84251964
 	] , [
 		lv2:symbol "HSq" ;
-		pset:value 0.0625
+		pset:value 1.17864168
 	] , [
 		lv2:symbol "HSsec" ;
 		pset:value true
@@ -36,13 +36,13 @@
 		pset:value 0.99727833
 	] , [
 		lv2:symbol "LPfreq" ;
-		pset:value 20000.0
+		pset:value 19846.45703125
 	] , [
 		lv2:symbol "LSfreq" ;
-		pset:value 161.78840637
+		pset:value 364.56692505
 	] , [
 		lv2:symbol "LSgain" ;
-		pset:value 8.36220455
+		pset:value 6.94488192
 	] , [
 		lv2:symbol "LSq" ;
 		pset:value 1.0
@@ -115,7 +115,7 @@
 		<http://gareus.org/oss/lv2/fil4#fftchannel> "-1"^^xsd:int ;
 		<http://gareus.org/oss/lv2/fil4#dbscale> "30.0"^^xsd:float ;
 		<http://gareus.org/oss/lv2/fil4#fftmode> "4609"^^xsd:int ;
-		<http://gareus.org/oss/lv2/fil4#uiscale> "440.0"^^xsd:float ,
+		<http://gareus.org/oss/lv2/fil4#uiscale> "1.0"^^xsd:float ,
 			"440.0"^^xsd:float
 	] .
 

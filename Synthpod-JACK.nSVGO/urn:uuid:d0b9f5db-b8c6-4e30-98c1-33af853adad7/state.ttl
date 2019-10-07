@@ -30,6 +30,6 @@
 		pset:value 0.31062993
 	] , [
 		lv2:symbol "threshold" ;
-		pset:value -27.95275497
+		pset:value -24.80315018
 	] .
 

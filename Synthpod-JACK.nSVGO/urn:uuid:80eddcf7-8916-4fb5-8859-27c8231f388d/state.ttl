@@ -15,16 +15,16 @@
 		pset:value 600.0
 	] , [
 		lv2:symbol "decay" ;
-		pset:value 0.2
+		pset:value 0.74950004
 	] , [
 		lv2:symbol "diffuse" ;
-		pset:value 60.0
+		pset:value 80.0
 	] , [
 		lv2:symbol "dry_level" ;
-		pset:value 78.74015808
+		pset:value 100.0
 	] , [
 		lv2:symbol "early_damp" ;
-		pset:value 16000.0
+		pset:value 9400.0
 	] , [
 		lv2:symbol "early_level" ;
 		pset:value 0.0
@@ -39,19 +39,19 @@
 		pset:value 4.0
 	] , [
 		lv2:symbol "late_damp" ;
-		pset:value 16000.0
+		pset:value 8500.0
 	] , [
 		lv2:symbol "late_level" ;
 		pset:value 0.0
 	] , [
 		lv2:symbol "low_boost" ;
-		pset:value 20.0
+		pset:value 60.0
 	] , [
 		lv2:symbol "predelay" ;
-		pset:value 4.0
+		pset:value 2.5
 	] , [
 		lv2:symbol "size" ;
-		pset:value 8.0
+		pset:value 9.72000504
 	] , [
 		lv2:symbol "spin" ;
 		pset:value 0.40000001
@@ -60,9 +60,9 @@
 		pset:value 40.0
 	] , [
 		lv2:symbol "width" ;
-		pset:value 90.0
+		pset:value 50.0
 	] ;
 	state:state [
-		<urn:distrho:preset> "Small Bright Room"
+		<urn:distrho:preset> "Large Clear Room"
 	] .
 
