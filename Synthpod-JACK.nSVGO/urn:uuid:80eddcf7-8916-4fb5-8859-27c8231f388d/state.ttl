@@ -21,7 +21,7 @@
 		pset:value 60.0
 	] , [
 		lv2:symbol "dry_level" ;
-		pset:value 100.0
+		pset:value 78.74015808
 	] , [
 		lv2:symbol "early_damp" ;
 		pset:value 16000.0

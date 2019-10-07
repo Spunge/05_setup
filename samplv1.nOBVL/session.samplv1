@@ -1,5 +1,5 @@
 <!DOCTYPE samplv1>
-<preset version="0.9.10" name="session">
+<preset name="session" version="0.9.10">
  <samples>
   <sample name="GEN1_SAMPLE" index="0">
    <filename>BD7500-863942da.WAV</filename>
