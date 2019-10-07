@@ -27,7 +27,8 @@
 			<urn:uuid:1d96a3b2-769b-4ad8-ac72-89713fcaf870> [
 				a <http://gareus.org/oss/lv2/fil4#stereo> ;
 				spod:modulePositionX "147.0"^^xsd:float ;
-				spod:modulePositionY "284.0"^^xsd:float
+				spod:modulePositionY "284.0"^^xsd:float ;
+				ui:ui <http://gareus.org/oss/lv2/fil4#ui_gl>
 			] ;
 			<urn:uuid:d0b9f5db-b8c6-4e30-98c1-33af853adad7> [
 				a <http://gareus.org/oss/lv2/darc#stereo> ;
@@ -60,6 +61,12 @@
 					spod:sourceSymbol "audio_source_2" ;
 					spod:sinkModule <urn:uuid:1d96a3b2-769b-4ad8-ac72-89713fcaf870> ;
 					spod:sinkSymbol "inR" ;
+					param:gain "1.0"^^xsd:float
+				] [
+					spod:sourceModule <urn:uuid:d977c817-5514-4adb-b282-98b14fb4948f> ;
+					spod:sourceSymbol "event_source" ;
+					spod:sinkModule <urn:uuid:1d96a3b2-769b-4ad8-ac72-89713fcaf870> ;
+					spod:sinkSymbol "__automation__in__" ;
 					param:gain "1.0"^^xsd:float
 				] [
 					spod:sourceModule <urn:uuid:1d96a3b2-769b-4ad8-ac72-89713fcaf870> ;
@@ -110,6 +117,12 @@
 					spod:sinkSymbol "event_sink" ;
 					param:gain "1.0"^^xsd:float
 				] [
+					spod:sourceModule <urn:uuid:1d96a3b2-769b-4ad8-ac72-89713fcaf870> ;
+					spod:sourceSymbol "__automation__out__" ;
+					spod:sinkModule <urn:uuid:416360c5-6738-4df8-b083-de9a3550b80f> ;
+					spod:sinkSymbol "event_sink" ;
+					param:gain "1.0"^^xsd:float
+				] [
 					spod:sourceModule <urn:uuid:80eddcf7-8916-4fb5-8859-27c8231f388d> ;
 					spod:sourceSymbol "lv2_audio_out_1" ;
 					spod:sinkModule <urn:uuid:416360c5-6738-4df8-b083-de9a3550b80f> ;
@@ -153,6 +166,11 @@
 					spod:nodePositionX "0.0"^^xsd:float ;
 					spod:nodePositionY "0.0"^^xsd:float
 				] [
+					spod:sourceModule <urn:uuid:1d96a3b2-769b-4ad8-ac72-89713fcaf870> ;
+					spod:sinkModule <urn:uuid:416360c5-6738-4df8-b083-de9a3550b80f> ;
+					spod:nodePositionX "0.0"^^xsd:float ;
+					spod:nodePositionY "0.0"^^xsd:float
+				] [
 					spod:sourceModule <urn:uuid:d0b9f5db-b8c6-4e30-98c1-33af853adad7> ;
 					spod:sinkModule <urn:uuid:416360c5-6738-4df8-b083-de9a3550b80f> ;
 					spod:nodePositionX "494.5"^^xsd:float ;
@@ -169,6 +187,54 @@
 			a atom:Tuple ;
 			rdf:value (
 				[
+					a midi:Controller ;
+					spod:sinkModule <urn:uuid:1d96a3b2-769b-4ad8-ac72-89713fcaf870> ;
+					midi:channel "0"^^xsd:int ;
+					midi:controllerNumber "0"^^xsd:int ;
+					spod:sourceMinimum "0.0"^^xsd:double ;
+					spod:sourceMaximum "127.0"^^xsd:double ;
+					spod:sinkMinimum "5.0"^^xsd:double ;
+					spod:sinkMaximum "1250.0"^^xsd:double ;
+					spod:sourceEnabled true ;
+					spod:sinkEnabled true ;
+					spod:sinkSymbol "HPfreq"
+				] [
+					a midi:Controller ;
+					spod:sinkModule <urn:uuid:1d96a3b2-769b-4ad8-ac72-89713fcaf870> ;
+					midi:channel "0"^^xsd:int ;
+					midi:controllerNumber "1"^^xsd:int ;
+					spod:sourceMinimum "0.0"^^xsd:double ;
+					spod:sourceMaximum "127.0"^^xsd:double ;
+					spod:sinkMinimum "25.0"^^xsd:double ;
+					spod:sinkMaximum "400.0"^^xsd:double ;
+					spod:sourceEnabled true ;
+					spod:sinkEnabled true ;
+					spod:sinkSymbol "LSfreq"
+				] [
+					a midi:Controller ;
+					spod:sinkModule <urn:uuid:1d96a3b2-769b-4ad8-ac72-89713fcaf870> ;
+					midi:channel "0"^^xsd:int ;
+					midi:controllerNumber "4"^^xsd:int ;
+					spod:sourceMinimum "0.0"^^xsd:double ;
+					spod:sourceMaximum "127.0"^^xsd:double ;
+					spod:sinkMinimum "-18.0"^^xsd:double ;
+					spod:sinkMaximum "18.0"^^xsd:double ;
+					spod:sourceEnabled true ;
+					spod:sinkEnabled true ;
+					spod:sinkSymbol "LSgain"
+				] [
+					a midi:Controller ;
+					spod:sinkModule <urn:uuid:1d96a3b2-769b-4ad8-ac72-89713fcaf870> ;
+					midi:channel "0"^^xsd:int ;
+					midi:controllerNumber "5"^^xsd:int ;
+					spod:sourceMinimum "0.0"^^xsd:double ;
+					spod:sourceMaximum "127.0"^^xsd:double ;
+					spod:sinkMinimum "0.0"^^xsd:double ;
+					spod:sinkMaximum "1.3999999761581421"^^xsd:double ;
+					spod:sourceEnabled true ;
+					spod:sinkEnabled true ;
+					spod:sinkSymbol "HPQ"
+				] [
 					a midi:Controller ;
 					spod:sinkModule <urn:uuid:d0b9f5db-b8c6-4e30-98c1-33af853adad7> ;
 					midi:channel "0"^^xsd:int ;
