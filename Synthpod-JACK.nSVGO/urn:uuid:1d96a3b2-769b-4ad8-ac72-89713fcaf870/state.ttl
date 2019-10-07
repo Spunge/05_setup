@@ -18,7 +18,7 @@
 		pset:value 44.21259689
 	] , [
 		lv2:symbol "HSfreq" ;
-		pset:value 1354.33068848
+		pset:value 1236.22045898
 	] , [
 		lv2:symbol "HSgain" ;
 		pset:value 1.84251964
@@ -36,7 +36,7 @@
 		pset:value 0.99727833
 	] , [
 		lv2:symbol "LPfreq" ;
-		pset:value 19846.45703125
+		pset:value 12476.37792969
 	] , [
 		lv2:symbol "LSfreq" ;
 		pset:value 364.56692505
@@ -115,7 +115,7 @@
 		<http://gareus.org/oss/lv2/fil4#fftchannel> "-1"^^xsd:int ;
 		<http://gareus.org/oss/lv2/fil4#dbscale> "30.0"^^xsd:float ;
 		<http://gareus.org/oss/lv2/fil4#fftmode> "4609"^^xsd:int ;
-		<http://gareus.org/oss/lv2/fil4#uiscale> "1.0"^^xsd:float ,
+		<http://gareus.org/oss/lv2/fil4#uiscale> "440.0"^^xsd:float ,
 			"440.0"^^xsd:float
 	] .
 

@@ -377,6 +377,66 @@
 					spod:sourceEnabled true ;
 					spod:sinkEnabled true ;
 					spod:sinkSymbol "late_level"
+				] [
+					a midi:Controller ;
+					spod:sinkModule <urn:uuid:80eddcf7-8916-4fb5-8859-27c8231f388d> ;
+					midi:channel "0"^^xsd:int ;
+					midi:controllerNumber "28"^^xsd:int ;
+					spod:sourceMinimum "0.0"^^xsd:double ;
+					spod:sourceMaximum "127.0"^^xsd:double ;
+					spod:sinkMinimum "1000.0"^^xsd:double ;
+					spod:sinkMaximum "16000.0"^^xsd:double ;
+					spod:sourceEnabled true ;
+					spod:sinkEnabled true ;
+					spod:sinkSymbol "in_high_cut"
+				] [
+					a midi:Controller ;
+					spod:sinkModule <urn:uuid:80eddcf7-8916-4fb5-8859-27c8231f388d> ;
+					midi:channel "0"^^xsd:int ;
+					midi:controllerNumber "20"^^xsd:int ;
+					spod:sourceMinimum "0.0"^^xsd:double ;
+					spod:sourceMaximum "127.0"^^xsd:double ;
+					spod:sinkMinimum "8.0"^^xsd:double ;
+					spod:sinkMaximum "32.0"^^xsd:double ;
+					spod:sourceEnabled true ;
+					spod:sinkEnabled true ;
+					spod:sinkSymbol "size"
+				] [
+					a midi:Controller ;
+					spod:sinkModule <urn:uuid:80eddcf7-8916-4fb5-8859-27c8231f388d> ;
+					midi:channel "0"^^xsd:int ;
+					midi:controllerNumber "21"^^xsd:int ;
+					spod:sourceMinimum "0.0"^^xsd:double ;
+					spod:sourceMaximum "127.0"^^xsd:double ;
+					spod:sinkMinimum "50.0"^^xsd:double ;
+					spod:sinkMaximum "150.0"^^xsd:double ;
+					spod:sourceEnabled true ;
+					spod:sinkEnabled true ;
+					spod:sinkSymbol "width"
+				] [
+					a midi:Controller ;
+					spod:sinkModule <urn:uuid:80eddcf7-8916-4fb5-8859-27c8231f388d> ;
+					midi:channel "0"^^xsd:int ;
+					midi:controllerNumber "22"^^xsd:int ;
+					spod:sourceMinimum "0.0"^^xsd:double ;
+					spod:sourceMaximum "127.0"^^xsd:double ;
+					spod:sinkMinimum "0.0"^^xsd:double ;
+					spod:sinkMaximum "100.0"^^xsd:double ;
+					spod:sourceEnabled true ;
+					spod:sinkEnabled true ;
+					spod:sinkSymbol "predelay"
+				] [
+					a midi:Controller ;
+					spod:sinkModule <urn:uuid:80eddcf7-8916-4fb5-8859-27c8231f388d> ;
+					midi:channel "0"^^xsd:int ;
+					midi:controllerNumber "23"^^xsd:int ;
+					spod:sourceMinimum "0.0"^^xsd:double ;
+					spod:sourceMaximum "127.0"^^xsd:double ;
+					spod:sinkMinimum "0.1000000014901161"^^xsd:double ;
+					spod:sinkMaximum "10.0"^^xsd:double ;
+					spod:sourceEnabled true ;
+					spod:sinkEnabled true ;
+					spod:sinkSymbol "decay"
 				]
 			)
 		] ;

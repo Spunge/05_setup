@@ -15,7 +15,7 @@
 		pset:value 600.0
 	] , [
 		lv2:symbol "decay" ;
-		pset:value 0.74950004
+		pset:value 2.59448814
 	] , [
 		lv2:symbol "diffuse" ;
 		pset:value 80.0
@@ -27,7 +27,7 @@
 		pset:value 9400.0
 	] , [
 		lv2:symbol "early_level" ;
-		pset:value 0.0
+		pset:value 14.17322826
 	] , [
 		lv2:symbol "early_send" ;
 		pset:value 0.0
@@ -48,10 +48,10 @@
 		pset:value 60.0
 	] , [
 		lv2:symbol "predelay" ;
-		pset:value 2.5
+		pset:value 4.72440958
 	] , [
 		lv2:symbol "size" ;
-		pset:value 9.72000504
+		pset:value 10.64566898
 	] , [
 		lv2:symbol "spin" ;
 		pset:value 0.40000001
