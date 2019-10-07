@@ -497,6 +497,30 @@
 					spod:sourceEnabled true ;
 					spod:sinkEnabled true ;
 					spod:sinkSymbol "low_boost"
+				] [
+					a midi:Controller ;
+					spod:sinkModule <urn:uuid:80eddcf7-8916-4fb5-8859-27c8231f388d> ;
+					midi:channel "0"^^xsd:int ;
+					midi:controllerNumber "30"^^xsd:int ;
+					spod:sourceMinimum "0.0"^^xsd:double ;
+					spod:sourceMaximum "127.0"^^xsd:double ;
+					spod:sinkMinimum "0.0"^^xsd:double ;
+					spod:sinkMaximum "100.0"^^xsd:double ;
+					spod:sourceEnabled true ;
+					spod:sinkEnabled true ;
+					spod:sinkSymbol "diffuse"
+				] [
+					a midi:Controller ;
+					spod:sinkModule <urn:uuid:80eddcf7-8916-4fb5-8859-27c8231f388d> ;
+					midi:channel "0"^^xsd:int ;
+					midi:controllerNumber "31"^^xsd:int ;
+					spod:sourceMinimum "0.0"^^xsd:double ;
+					spod:sourceMaximum "127.0"^^xsd:double ;
+					spod:sinkMinimum "0.0"^^xsd:double ;
+					spod:sinkMaximum "100.0"^^xsd:double ;
+					spod:sourceEnabled true ;
+					spod:sinkEnabled true ;
+					spod:sinkSymbol "wander"
 				]
 			)
 		] ;
