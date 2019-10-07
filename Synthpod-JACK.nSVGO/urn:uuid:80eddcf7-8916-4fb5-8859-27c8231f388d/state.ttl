@@ -24,7 +24,7 @@
 		pset:value 100.0
 	] , [
 		lv2:symbol "early_damp" ;
-		pset:value 9400.0
+		pset:value 6078.74023438
 	] , [
 		lv2:symbol "early_level" ;
 		pset:value 14.17322826
@@ -39,7 +39,7 @@
 		pset:value 34.64566803
 	] , [
 		lv2:symbol "late_damp" ;
-		pset:value 8500.0
+		pset:value 7850.39355469
 	] , [
 		lv2:symbol "late_level" ;
 		pset:value 0.0

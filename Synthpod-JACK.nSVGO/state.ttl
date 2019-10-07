@@ -453,7 +453,7 @@
 					a midi:Controller ;
 					spod:sinkModule <urn:uuid:80eddcf7-8916-4fb5-8859-27c8231f388d> ;
 					midi:channel "0"^^xsd:int ;
-					midi:controllerNumber "26"^^xsd:int ;
+					midi:controllerNumber "28"^^xsd:int ;
 					spod:sourceMinimum "0.0"^^xsd:double ;
 					spod:sourceMaximum "127.0"^^xsd:double ;
 					spod:sinkMinimum "1000.0"^^xsd:double ;
@@ -465,7 +465,7 @@
 					a midi:Controller ;
 					spod:sinkModule <urn:uuid:80eddcf7-8916-4fb5-8859-27c8231f388d> ;
 					midi:channel "0"^^xsd:int ;
-					midi:controllerNumber "27"^^xsd:int ;
+					midi:controllerNumber "29"^^xsd:int ;
 					spod:sourceMinimum "0.0"^^xsd:double ;
 					spod:sourceMaximum "127.0"^^xsd:double ;
 					spod:sinkMinimum "1000.0"^^xsd:double ;
@@ -473,6 +473,30 @@
 					spod:sourceEnabled true ;
 					spod:sinkEnabled true ;
 					spod:sinkSymbol "late_damp"
+				] [
+					a midi:Controller ;
+					spod:sinkModule <urn:uuid:80eddcf7-8916-4fb5-8859-27c8231f388d> ;
+					midi:channel "0"^^xsd:int ;
+					midi:controllerNumber "26"^^xsd:int ;
+					spod:sourceMinimum "0.0"^^xsd:double ;
+					spod:sourceMaximum "127.0"^^xsd:double ;
+					spod:sinkMinimum "50.0"^^xsd:double ;
+					spod:sinkMaximum "1050.0"^^xsd:double ;
+					spod:sourceEnabled true ;
+					spod:sinkEnabled true ;
+					spod:sinkSymbol "boost_freq"
+				] [
+					a midi:Controller ;
+					spod:sinkModule <urn:uuid:80eddcf7-8916-4fb5-8859-27c8231f388d> ;
+					midi:channel "0"^^xsd:int ;
+					midi:controllerNumber "27"^^xsd:int ;
+					spod:sourceMinimum "0.0"^^xsd:double ;
+					spod:sourceMaximum "127.0"^^xsd:double ;
+					spod:sinkMinimum "0.0"^^xsd:double ;
+					spod:sinkMaximum "100.0"^^xsd:double ;
+					spod:sourceEnabled true ;
+					spod:sinkEnabled true ;
+					spod:sinkSymbol "low_boost"
 				]
 			)
 		] ;
