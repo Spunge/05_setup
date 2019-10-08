@@ -12,10 +12,10 @@
 	rdfs:label "state" ;
 	lv2:port [
 		lv2:symbol "HPQ" ;
-		pset:value 1.39999998
+		pset:value 0.57322836
 	] , [
 		lv2:symbol "HPfreq" ;
-		pset:value 24.60629845
+		pset:value 5.0
 	] , [
 		lv2:symbol "HSfreq" ;
 		pset:value 1236.22045898
@@ -36,13 +36,13 @@
 		pset:value 0.99727833
 	] , [
 		lv2:symbol "LPfreq" ;
-		pset:value 12476.37792969
+		pset:value 10787.40136719
 	] , [
 		lv2:symbol "LSfreq" ;
-		pset:value 364.56692505
+		pset:value 25.0
 	] , [
 		lv2:symbol "LSgain" ;
-		pset:value 6.94488192
+		pset:value 0.70866144
 	] , [
 		lv2:symbol "LSq" ;
 		pset:value 1.0
