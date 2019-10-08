@@ -1,6 +1,16 @@
 <!DOCTYPE samplv1>
 <preset version="0.9.10" name="session">
- <samples/>
+ <samples>
+  <sample index="0" name="GEN1_SAMPLE">
+   <filename>RS-ba75e156.WAV</filename>
+   <offset-start>0</offset-start>
+   <offset-end>11933</offset-end>
+   <loop-start>0</loop-start>
+   <loop-end>11933</loop-end>
+   <loop-fade>0</loop-fade>
+   <loop-zero>1</loop-zero>
+  </sample>
+ </samples>
  <params>
   <param index="0" name="GEN1_SAMPLE">60</param>
   <param index="1" name="GEN1_REVERSE">0</param>
@@ -54,7 +64,7 @@
   <param index="49" name="DEF1_MODWHEEL">0.2</param>
   <param index="50" name="DEF1_PRESSURE">0.2</param>
   <param index="51" name="DEF1_VELOCITY">0.2</param>
-  <param index="52" name="DEF1_CHANNEL">0</param>
+  <param index="52" name="DEF1_CHANNEL">4</param>
   <param index="53" name="DEF1_MONO">0</param>
   <param index="54" name="CHO1_WET">0</param>
   <param index="55" name="CHO1_DELAY">0.5</param>
