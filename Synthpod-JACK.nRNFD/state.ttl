@@ -37,8 +37,7 @@
 			<urn:uuid:80eddcf7-8916-4fb5-8859-27c8231f388d> [
 				a <urn:dragonfly:room> ;
 				spod:modulePositionX "653.0"^^xsd:float ;
-				spod:modulePositionY "279.0"^^xsd:float ;
-				ui:ui <urn:dragonfly:room#UI>
+				spod:modulePositionY "279.0"^^xsd:float
 			] ;
 			<urn:uuid:416360c5-6738-4df8-b083-de9a3550b80f> [
 				a spod:sink ;
