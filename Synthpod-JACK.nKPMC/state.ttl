@@ -14,7 +14,7 @@
 	a pset:Preset ;
 	lv2:appliesTo spod:stereo ,
 		spod:monoatom ;
-	rdfs:label "/home/johan/NSM Sessions/05_setup/Synthpod-JACK.nSVGO" ;
+	rdfs:label "/home/johan/NSM Sessions/05_setup/Synthpod-JACK.nKPMC" ;
 	state:state [
 		lv2:minorVersion "1"^^xsd:int ;
 		lv2:microVersion "6131"^^xsd:int ;
@@ -523,9 +523,9 @@
 				]
 			)
 		] ;
-		spod:graphPositionX "-334.0"^^xsd:float ;
-		spod:graphPositionY "-169.0"^^xsd:float ;
+		spod:graphPositionX "-292.0"^^xsd:float ;
+		spod:graphPositionY "-113.0"^^xsd:float ;
 		spod:columnEnabled true ;
-		spod:rowEnabled false
+		spod:rowEnabled true
 	] .
 

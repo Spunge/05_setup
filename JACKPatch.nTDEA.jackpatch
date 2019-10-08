@@ -22,10 +22,12 @@ Non-Mixer.nSOHG/master:out-1             |> system:playback_1
 Non-Mixer.nSOHG/master:out-2             |> system:playback_2
 Octothorpe:apc_out                       |> system:midi_playback_3
 Octothorpe:control_out                   |> Synthpod-JACK.nGWCK:#88644_event_sink
+Octothorpe:control_out                   |> Synthpod-JACK.nKPMC:#88644_event_sink
 Octothorpe:control_out                   |> Synthpod-JACK.nQLOQ:#88644_event_sink
 Octothorpe:control_out                   |> Synthpod-JACK.nRNFD:#88644_event_sink
 Octothorpe:control_out                   |> Synthpod-JACK.nSVGO:#88644_event_sink
 Octothorpe:control_out                   |> Synthpod-JACK.nXXNB:#98647_event_sink
+Octothorpe:sequence_out                  |> drumkv1.nGUJF:in
 Octothorpe:sequence_out                  |> drumkv1.nKAMY:in
 Octothorpe:sequence_out                  |> samplv1.nFFUM:in
 Octothorpe:sequence_out                  |> samplv1.nHAUG:in
@@ -33,6 +35,9 @@ Octothorpe:sequence_out                  |> samplv1.nOBVL:in
 Synthpod-JACK.nGWCK:#86729_audio_source_1 |> Non-Mixer.nSOHG (percussion):port3/in-1
 Synthpod-JACK.nGWCK:#86729_audio_source_2 |> Non-Mixer.nSOHG (percussion):port3/in-2
 Synthpod-JACK.nGWCK:#86729_event_source  |> Octothorpe:control_in
+Synthpod-JACK.nKPMC:#86729_audio_source_1 |> Non-Mixer.nSOHG (percussion):Port4/in-1
+Synthpod-JACK.nKPMC:#86729_audio_source_2 |> Non-Mixer.nSOHG (percussion):Port4/in-2
+Synthpod-JACK.nKPMC:#86729_event_source  |> Octothorpe:control_in
 Synthpod-JACK.nQLOQ:#86729_audio_source_1 |> Non-Mixer.nSOHG (percussion):port2/in-1
 Synthpod-JACK.nQLOQ:#86729_audio_source_2 |> Non-Mixer.nSOHG (percussion):port2/in-2
 Synthpod-JACK.nQLOQ:#86729_event_source  |> Octothorpe:control_in
@@ -43,6 +48,8 @@ Synthpod-JACK.nSVGO:#86729_audio_source_1 |> Non-Mixer.nSOHG (percussion):port0/
 Synthpod-JACK.nSVGO:#86729_audio_source_2 |> Non-Mixer.nSOHG (percussion):port0/in-2
 Synthpod-JACK.nSVGO:#86729_event_source  |> Octothorpe:control_in
 Synthpod-JACK.nXXNB:#27045_event_source  |> Non-MIDI-Mapper.nTQXY:midi-in
+drumkv1.nGUJF:out_1                      |> Synthpod-JACK.nKPMC:#88644_audio_sink_1
+drumkv1.nGUJF:out_2                      |> Synthpod-JACK.nKPMC:#88644_audio_sink_2
 drumkv1.nKAMY:out_1                      |> Synthpod-JACK.nQLOQ:#88644_audio_sink_1
 drumkv1.nKAMY:out_2                      |> Synthpod-JACK.nQLOQ:#88644_audio_sink_2
 samplv1.nFFUM:out_1                      |> Synthpod-JACK.nGWCK:#88644_audio_sink_1
