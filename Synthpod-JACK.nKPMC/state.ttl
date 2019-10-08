@@ -1,0 +1,50 @@
+@prefix midi: <http://lv2plug.in/ns/ext/midi#> .
+@prefix atom: <http://lv2plug.in/ns/ext/atom#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix lv2: <http://lv2plug.in/ns/lv2core#> .
+@prefix pset: <http://lv2plug.in/ns/ext/presets#> .
+@prefix param: <http://lv2plug.in/ns/ext/parameters#> .
+@prefix state: <http://lv2plug.in/ns/ext/state#> .
+@prefix ui: <http://lv2plug.in/ns/extensions/ui#> .
+@prefix spod: <http://open-music-kontrollers.ch/lv2/synthpod#> .
+
+<file:///tmp/base/>
+	a pset:Preset ;
+	lv2:appliesTo spod:stereo ,
+		spod:monoatom ;
+	rdfs:label "/home/johan/NSM Sessions/05_setup/Synthpod-JACK.nKPMC" ;
+	state:state [
+		lv2:minorVersion "1"^^xsd:int ;
+		lv2:microVersion "6131"^^xsd:int ;
+		spod:moduleList [
+			<urn:uuid:8f96dfe6-c456-4d36-8b29-3e83d8121358> [
+				a spod:source ;
+				spod:modulePositionX "200.0"^^xsd:float ;
+				spod:modulePositionY "50.0"^^xsd:float
+			] ;
+			<urn:uuid:833700e6-1b5d-48b1-8b73-8e4b05bc2795> [
+				a spod:sink ;
+				spod:modulePositionX "400.0"^^xsd:float ;
+				spod:modulePositionY "50.0"^^xsd:float
+			]
+		] ;
+		spod:connectionList [
+			a atom:Tuple ;
+			rdf:value ()
+		] ;
+		spod:nodeList [
+			a atom:Tuple ;
+			rdf:value ()
+		] ;
+		spod:automationList [
+			a atom:Tuple ;
+			rdf:value ()
+		] ;
+		spod:graphPositionX "0.0"^^xsd:float ;
+		spod:graphPositionY "0.0"^^xsd:float ;
+		spod:columnEnabled false ;
+		spod:rowEnabled false
+	] .
+
