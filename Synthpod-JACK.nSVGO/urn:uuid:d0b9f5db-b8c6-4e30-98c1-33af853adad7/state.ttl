@@ -12,7 +12,7 @@
 	rdfs:label "state" ;
 	lv2:port [
 		lv2:symbol "Ratio" ;
-		pset:value 0.74015749
+		pset:value 0.44094488
 	] , [
 		lv2:symbol "attack" ;
 		pset:value 0.01
@@ -30,6 +30,6 @@
 		pset:value 0.31062993
 	] , [
 		lv2:symbol "threshold" ;
-		pset:value -24.80315018
+		pset:value -36.14173126
 	] .
 
