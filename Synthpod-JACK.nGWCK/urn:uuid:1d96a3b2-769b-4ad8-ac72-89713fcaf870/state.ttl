@@ -1,0 +1,121 @@
+@prefix atom: <http://lv2plug.in/ns/ext/atom#> .
+@prefix lv2: <http://lv2plug.in/ns/lv2core#> .
+@prefix pset: <http://lv2plug.in/ns/ext/presets#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix state: <http://lv2plug.in/ns/ext/state#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<>
+	a pset:Preset ;
+	lv2:appliesTo <http://gareus.org/oss/lv2/fil4#stereo> ;
+	rdfs:label "state" ;
+	lv2:port [
+		lv2:symbol "HPQ" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "HPfreq" ;
+		pset:value 122.63779449
+	] , [
+		lv2:symbol "HSfreq" ;
+		pset:value 3716.53540039
+	] , [
+		lv2:symbol "HSgain" ;
+		pset:value -14.59842491
+	] , [
+		lv2:symbol "HSq" ;
+		pset:value 0.62057084
+	] , [
+		lv2:symbol "HSsec" ;
+		pset:value true
+	] , [
+		lv2:symbol "HighPass" ;
+		pset:value true
+	] , [
+		lv2:symbol "LPQ" ;
+		pset:value 0.99727833
+	] , [
+		lv2:symbol "LPfreq" ;
+		pset:value 20000.0
+	] , [
+		lv2:symbol "LSfreq" ;
+		pset:value 89.96063232
+	] , [
+		lv2:symbol "LSgain" ;
+		pset:value -18.0
+	] , [
+		lv2:symbol "LSq" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "LSsec" ;
+		pset:value true
+	] , [
+		lv2:symbol "LowPass" ;
+		pset:value true
+	] , [
+		lv2:symbol "enable" ;
+		pset:value true
+	] , [
+		lv2:symbol "freq1" ;
+		pset:value 159.99998474
+	] , [
+		lv2:symbol "freq2" ;
+		pset:value 397.00009155
+	] , [
+		lv2:symbol "freq3" ;
+		pset:value 1250.00012207
+	] , [
+		lv2:symbol "freq4" ;
+		pset:value 2500.00024414
+	] , [
+		lv2:symbol "gain" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "gain1" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "gain2" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "gain3" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "gain4" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "peakreset" ;
+		pset:value true
+	] , [
+		lv2:symbol "q1" ;
+		pset:value 0.60151249
+	] , [
+		lv2:symbol "q2" ;
+		pset:value 0.60151249
+	] , [
+		lv2:symbol "q3" ;
+		pset:value 0.60151249
+	] , [
+		lv2:symbol "q4" ;
+		pset:value 0.60151249
+	] , [
+		lv2:symbol "sec1" ;
+		pset:value true
+	] , [
+		lv2:symbol "sec2" ;
+		pset:value true
+	] , [
+		lv2:symbol "sec3" ;
+		pset:value true
+	] , [
+		lv2:symbol "sec4" ;
+		pset:value true
+	] ;
+	state:state [
+		<http://gareus.org/oss/lv2/fil4#fftgain> "0.0"^^xsd:float ;
+		<http://gareus.org/oss/lv2/fil4#fftchannel> "-1"^^xsd:int ;
+		<http://gareus.org/oss/lv2/fil4#dbscale> "30.0"^^xsd:float ;
+		<http://gareus.org/oss/lv2/fil4#fftmode> "4609"^^xsd:int ;
+		<http://gareus.org/oss/lv2/fil4#uiscale> "440.0"^^xsd:float ,
+			"440.0"^^xsd:float
+	] .
+

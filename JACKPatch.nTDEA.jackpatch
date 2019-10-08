@@ -26,6 +26,7 @@ Octothorpe:control_out                   |> Synthpod-JACK.nRNFD:#88644_event_sin
 Octothorpe:control_out                   |> Synthpod-JACK.nSVGO:#88644_event_sink
 Octothorpe:control_out                   |> Synthpod-JACK.nXXNB:#98647_event_sink
 Octothorpe:sequence_out                  |> drumkv1.nKAMY:in
+Octothorpe:sequence_out                  |> samplv1.nFFUM:in
 Octothorpe:sequence_out                  |> samplv1.nHAUG:in
 Octothorpe:sequence_out                  |> samplv1.nOBVL:in
 Synthpod-JACK.nQLOQ:#86729_audio_source_1 |> Non-Mixer.nSOHG (percussion):port2/in-1

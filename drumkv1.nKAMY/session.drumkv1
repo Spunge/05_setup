@@ -2,7 +2,7 @@
 <preset name="session" version="0.9.10">
  <elements>
   <element index="38">
-   <sample name="GEN1_SAMPLE" offset-end="26477" offset-start="0" index="0">sound0-57793867.wav</sample>
+   <sample offset-end="26477" offset-start="0" name="GEN1_SAMPLE" index="0">sound0-57793867.wav</sample>
    <params>
     <param name="GEN1_SAMPLE" index="0">38</param>
     <param name="GEN1_REVERSE" index="1">0</param>
@@ -51,7 +51,7 @@
    </params>
   </element>
   <element index="45">
-   <sample name="GEN1_SAMPLE" offset-end="26477" offset-start="0" index="0">sound0-57793867.wav</sample>
+   <sample offset-end="26477" offset-start="0" name="GEN1_SAMPLE" index="0">sound0-57793867.wav</sample>
    <params>
     <param name="GEN1_SAMPLE" index="0">45</param>
     <param name="GEN1_REVERSE" index="1">0</param>
@@ -100,7 +100,7 @@
    </params>
   </element>
   <element index="46">
-   <sample name="GEN1_SAMPLE" offset-end="26477" offset-start="0" index="0">sound0-old1-1f59e4c.wav</sample>
+   <sample offset-end="26477" offset-start="0" name="GEN1_SAMPLE" index="0">sound0-old1-1f59e4c.wav</sample>
    <params>
     <param name="GEN1_SAMPLE" index="0">46</param>
     <param name="GEN1_REVERSE" index="1">0</param>
@@ -149,7 +149,7 @@
    </params>
   </element>
   <element index="47">
-   <sample name="GEN1_SAMPLE" offset-end="49396" offset-start="0" index="0">sound1-57874fe8.wav</sample>
+   <sample offset-end="49396" offset-start="0" name="GEN1_SAMPLE" index="0">sound1-57874fe8.wav</sample>
    <params>
     <param name="GEN1_SAMPLE" index="0">47</param>
     <param name="GEN1_REVERSE" index="1">0</param>
@@ -198,7 +198,7 @@
    </params>
   </element>
   <element index="48">
-   <sample name="GEN1_SAMPLE" offset-end="54468" offset-start="0" index="0">sound1-old1-f63f0f6b.wav</sample>
+   <sample offset-end="54468" offset-start="0" name="GEN1_SAMPLE" index="0">sound1-old1-f63f0f6b.wav</sample>
    <params>
     <param name="GEN1_SAMPLE" index="0">48</param>
     <param name="GEN1_REVERSE" index="1">0</param>
@@ -247,7 +247,7 @@
    </params>
   </element>
   <element index="49">
-   <sample name="GEN1_SAMPLE" offset-end="16905" offset-start="0" index="0">sound2-57956769.wav</sample>
+   <sample offset-end="16905" offset-start="0" name="GEN1_SAMPLE" index="0">sound2-57956769.wav</sample>
    <params>
     <param name="GEN1_SAMPLE" index="0">49</param>
     <param name="GEN1_REVERSE" index="1">0</param>
@@ -296,7 +296,7 @@
    </params>
   </element>
   <element index="50">
-   <sample name="GEN1_SAMPLE" offset-end="56766" offset-start="0" index="0">sound3-57a37eea.wav</sample>
+   <sample offset-end="56766" offset-start="0" name="GEN1_SAMPLE" index="0">sound3-57a37eea.wav</sample>
    <params>
     <param name="GEN1_SAMPLE" index="0">50</param>
     <param name="GEN1_REVERSE" index="1">0</param>
@@ -345,7 +345,7 @@
    </params>
   </element>
   <element index="60">
-   <sample name="GEN1_SAMPLE" offset-end="26477" offset-start="0" index="0">sound0-57793867.wav</sample>
+   <sample offset-end="26477" offset-start="0" name="GEN1_SAMPLE" index="0">sound0-57793867.wav</sample>
    <params>
     <param name="GEN1_SAMPLE" index="0">60</param>
     <param name="GEN1_REVERSE" index="1">0</param>
