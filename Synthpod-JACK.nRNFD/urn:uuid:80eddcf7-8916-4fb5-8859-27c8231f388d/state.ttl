@@ -15,7 +15,7 @@
 		pset:value 333.46456909
 	] , [
 		lv2:symbol "decay" ;
-		pset:value 0.1
+		pset:value 0.72362202
 	] , [
 		lv2:symbol "diffuse" ;
 		pset:value 67.71653748
@@ -42,7 +42,7 @@
 		pset:value 5842.51953125
 	] , [
 		lv2:symbol "late_level" ;
-		pset:value 0.0
+		pset:value 3.14960623
 	] , [
 		lv2:symbol "low_boost" ;
 		pset:value 49.60630035
@@ -51,7 +51,7 @@
 		pset:value 92.91338348
 	] , [
 		lv2:symbol "size" ;
-		pset:value 16.31496048
+		pset:value 12.34645653
 	] , [
 		lv2:symbol "spin" ;
 		pset:value 0.40000001
@@ -60,7 +60,7 @@
 		pset:value 80.31496429
 	] , [
 		lv2:symbol "width" ;
-		pset:value 80.70866394
+		pset:value 64.1732254
 	] ;
 	state:state [
 		<urn:distrho:preset> "Large Clear Room"
