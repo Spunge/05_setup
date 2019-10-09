@@ -12,37 +12,37 @@
 	rdfs:label "state" ;
 	lv2:port [
 		lv2:symbol "boost_freq" ;
-		pset:value 333.46456909
+		pset:value 601.18109131
 	] , [
 		lv2:symbol "decay" ;
-		pset:value 2.59448814
+		pset:value 0.72362202
 	] , [
 		lv2:symbol "diffuse" ;
-		pset:value 54.33070755
+		pset:value 18.89763832
 	] , [
 		lv2:symbol "dry_level" ;
 		pset:value 100.0
 	] , [
 		lv2:symbol "early_damp" ;
-		pset:value 6078.74023438
+		pset:value 8677.16503906
 	] , [
 		lv2:symbol "early_level" ;
-		pset:value 0.0
+		pset:value 11.02362251
 	] , [
 		lv2:symbol "early_send" ;
-		pset:value 0.0
+		pset:value 20.47244072
 	] , [
 		lv2:symbol "in_high_cut" ;
-		pset:value 3598.42529297
+		pset:value 11275.59082031
 	] , [
 		lv2:symbol "in_low_cut" ;
-		pset:value 34.64566803
+		pset:value 192.12599182
 	] , [
 		lv2:symbol "late_damp" ;
-		pset:value 5842.51953125
+		pset:value 7850.39355469
 	] , [
 		lv2:symbol "late_level" ;
-		pset:value 0.0
+		pset:value 5.51181126
 	] , [
 		lv2:symbol "low_boost" ;
 		pset:value 86.61417389
@@ -57,7 +57,7 @@
 		pset:value 0.40000001
 	] , [
 		lv2:symbol "wander" ;
-		pset:value 77.95275879
+		pset:value 90.55117798
 	] , [
 		lv2:symbol "width" ;
 		pset:value 50.0
