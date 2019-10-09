@@ -27,7 +27,7 @@
 		pset:value 6078.74023438
 	] , [
 		lv2:symbol "early_level" ;
-		pset:value 0.0
+		pset:value 1.57480311
 	] , [
 		lv2:symbol "early_send" ;
 		pset:value 0.0

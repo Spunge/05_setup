@@ -5,19 +5,19 @@
 	Mixer_Strip 0x2A create :name "port0" :width "narrow" :tab "fader" :color 357720114 :gain_mode 0 :mute_mode 0 :group 0x14 :auto_input "" :manual_connection 0
 	Chain 0x2B create :strip 0x2A :tab "chain"
 	JACK_Module 0x2C create :parameter_values "0.000000:2.000000" :is_default 1 :chain 0x2B :active 1
-	Gain_Module 0x2D create :parameter_values "0.614174:0.000000" :is_default 1 :chain 0x2B :active 1
+	Gain_Module 0x2D create :parameter_values "5.401573:0.000000" :is_default 1 :chain 0x2B :active 1
 	Meter_Module 0x2E create :is_default 1 :chain 0x2B :active 1
 	JACK_Module 0x2F create :parameter_values "2.000000:0.000000" :is_default 1 :chain 0x2B :active 1
 	Mixer_Strip 0x30 create :name "port1" :width "narrow" :tab "fader" :color 86062034 :gain_mode 0 :mute_mode 0 :group 0x14 :auto_input "" :manual_connection 0
 	Chain 0x31 create :strip 0x30 :tab "chain"
 	JACK_Module 0x32 create :parameter_values "0.000000:2.000000" :is_default 1 :chain 0x31 :active 1
-	Gain_Module 0x33 create :parameter_values "0.015747:0.000000" :is_default 1 :chain 0x31 :active 1
+	Gain_Module 0x33 create :parameter_values "4.803146:0.000000" :is_default 1 :chain 0x31 :active 1
 	Meter_Module 0x34 create :is_default 1 :chain 0x31 :active 1
 	JACK_Module 0x35 create :parameter_values "2.000000:0.000000" :is_default 1 :chain 0x31 :active 1
 	Mixer_Strip 0x3C create :name "port2" :width "narrow" :tab "fader" :color 866675530 :gain_mode 0 :mute_mode 0 :group 0x14 :auto_input "" :manual_connection 0
 	Chain 0x3D create :strip 0x3C :tab "chain"
 	JACK_Module 0x3E create :parameter_values "0.000000:2.000000" :is_default 1 :chain 0x3D :active 1
-	Gain_Module 0x3F create :parameter_values "1.212593:0.000000" :is_default 1 :chain 0x3D :active 1
+	Gain_Module 0x3F create :parameter_values "3.007874:0.000000" :is_default 1 :chain 0x3D :active 1
 	Meter_Module 0x40 create :is_default 1 :chain 0x3D :active 1
 	JACK_Module 0x41 create :parameter_values "2.000000:0.000000" :is_default 1 :chain 0x3D :active 1
 	Mixer_Strip 0x42 create :name "port3" :width "narrow" :tab "fader" :color 218808517 :gain_mode 0 :mute_mode 0 :group 0x14 :auto_input "" :manual_connection 0
