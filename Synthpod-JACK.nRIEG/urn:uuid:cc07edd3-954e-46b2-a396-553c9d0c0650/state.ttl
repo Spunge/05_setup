@@ -45,13 +45,13 @@
 		pset:value 1.0
 	] , [
 		lv2:symbol "ratio" ;
-		pset:value 2.0
+		pset:value 7.43307066
 	] , [
 		lv2:symbol "release" ;
 		pset:value 250.0
 	] , [
 		lv2:symbol "sc_level" ;
-		pset:value 7.36150169
+		pset:value 4.5499506
 	] , [
 		lv2:symbol "sc_listen" ;
 		pset:value false
@@ -66,6 +66,6 @@
 		pset:value 1
 	] , [
 		lv2:symbol "threshold" ;
-		pset:value 0.125
+		pset:value 0.19763473
 	] .
 
