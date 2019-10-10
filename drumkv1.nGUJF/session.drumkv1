@@ -2,7 +2,7 @@
 <preset version="0.9.10" name="session">
  <elements>
   <element index="36">
-   <sample offset-start="0" index="0" name="GEN1_SAMPLE" offset-end="45232">01L4-89c385e1.UFHHM   [s].wav</sample>
+   <sample index="0" name="GEN1_SAMPLE" offset-start="0" offset-end="45232">01L4-89c385e1.UFHHM   [s].wav</sample>
    <params>
     <param index="0" name="GEN1_SAMPLE">36</param>
     <param index="1" name="GEN1_REVERSE">0</param>
@@ -51,7 +51,7 @@
    </params>
   </element>
   <element index="37">
-   <sample offset-start="0" index="0" name="GEN1_SAMPLE" offset-end="194172">01OP-aa0d745a.UFHHM   [s].wav</sample>
+   <sample index="0" name="GEN1_SAMPLE" offset-start="0" offset-end="194172">01OP-aa0d745a.UFHHM   [s].wav</sample>
    <params>
     <param index="0" name="GEN1_SAMPLE">37</param>
     <param index="1" name="GEN1_REVERSE">0</param>
@@ -100,7 +100,7 @@
    </params>
   </element>
   <element index="38">
-   <sample offset-start="0" index="0" name="GEN1_SAMPLE" offset-end="28490">01PD-a6a8ee6d.UFHHM   [s].wav</sample>
+   <sample index="0" name="GEN1_SAMPLE" offset-start="0" offset-end="28490">01PD-a6a8ee6d.UFHHM   [s].wav</sample>
    <params>
     <param index="0" name="GEN1_SAMPLE">38</param>
     <param index="1" name="GEN1_REVERSE">0</param>
@@ -149,7 +149,7 @@
    </params>
   </element>
   <element index="39">
-   <sample offset-start="0" index="0" name="GEN1_SAMPLE" offset-end="309049">01PS-609cf07c.UFHHM   [s].wav</sample>
+   <sample index="0" name="GEN1_SAMPLE" offset-start="0" offset-end="309049">01PS-609cf07c.UFHHM   [s].wav</sample>
    <params>
     <param index="0" name="GEN1_SAMPLE">39</param>
     <param index="1" name="GEN1_REVERSE">0</param>
