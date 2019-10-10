@@ -12,16 +12,16 @@
 	rdfs:label "state" ;
 	lv2:port [
 		lv2:symbol "boost_freq" ;
-		pset:value 333.46456909
+		pset:value 348.61602783
 	] , [
 		lv2:symbol "decay" ;
-		pset:value 0.1
+		pset:value 2.90629911
 	] , [
 		lv2:symbol "diffuse" ;
-		pset:value 54.33070755
+		pset:value 62.99212646
 	] , [
 		lv2:symbol "dry_level" ;
-		pset:value 97.63779449
+		pset:value 100.0
 	] , [
 		lv2:symbol "early_damp" ;
 		pset:value 6078.74023438
@@ -33,7 +33,7 @@
 		pset:value 0.0
 	] , [
 		lv2:symbol "in_high_cut" ;
-		pset:value 3598.42529297
+		pset:value 13401.57519531
 	] , [
 		lv2:symbol "in_low_cut" ;
 		pset:value 34.64566803
@@ -42,13 +42,13 @@
 		pset:value 5842.51953125
 	] , [
 		lv2:symbol "late_level" ;
-		pset:value 0.0
+		pset:value 40.15748215
 	] , [
 		lv2:symbol "low_boost" ;
-		pset:value 86.61417389
+		pset:value 51.96850204
 	] , [
 		lv2:symbol "predelay" ;
-		pset:value 8.66141701
+		pset:value 92.91338348
 	] , [
 		lv2:symbol "size" ;
 		pset:value 23.11811066
@@ -57,10 +57,10 @@
 		pset:value 0.40000001
 	] , [
 		lv2:symbol "wander" ;
-		pset:value 77.95275879
+		pset:value 76.37795258
 	] , [
 		lv2:symbol "width" ;
-		pset:value 50.0
+		pset:value 64.1732254
 	] ;
 	state:state [
 		<urn:distrho:preset> "Large Clear Room"
