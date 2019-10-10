@@ -15,34 +15,34 @@
 		pset:value 601.18109131
 	] , [
 		lv2:symbol "decay" ;
-		pset:value 0.48976377
+		pset:value 1.73700786
 	] , [
 		lv2:symbol "diffuse" ;
-		pset:value 18.89763832
+		pset:value 9.44881916
 	] , [
 		lv2:symbol "dry_level" ;
 		pset:value 100.0
 	] , [
 		lv2:symbol "early_damp" ;
-		pset:value 8677.16503906
+		pset:value 1590.55114746
 	] , [
 		lv2:symbol "early_level" ;
-		pset:value 5.51181126
+		pset:value 24.40944862
 	] , [
 		lv2:symbol "early_send" ;
-		pset:value 0.0
+		pset:value 14.96062946
 	] , [
 		lv2:symbol "in_high_cut" ;
-		pset:value 11275.59082031
+		pset:value 10566.92871094
 	] , [
 		lv2:symbol "in_low_cut" ;
-		pset:value 192.12599182
+		pset:value 163.77952576
 	] , [
 		lv2:symbol "late_damp" ;
-		pset:value 7850.39355469
+		pset:value 5488.18896484
 	] , [
 		lv2:symbol "late_level" ;
-		pset:value 1.57480311
+		pset:value 5.51181126
 	] , [
 		lv2:symbol "low_boost" ;
 		pset:value 86.61417389
@@ -51,7 +51,7 @@
 		pset:value 4.72440958
 	] , [
 		lv2:symbol "size" ;
-		pset:value 10.07874012
+		pset:value 8.0
 	] , [
 		lv2:symbol "spin" ;
 		pset:value 0.40000001
