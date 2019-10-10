@@ -1,7 +1,8 @@
+Synthpod-JACK:synthpod_jack:nSVGO
+Synthpod-JACK:synthpod_jack:nROMP
 JACKPatch:jackpatch:nTDEA
 Non-Mixer:non-mixer:nSOHG
 Non-MIDI-Mapper:non-midi-mapper:nTQXY
-Synthpod-JACK:synthpod_jack:nSVGO
 samplv1:samplv1_jack:nOBVL
 Synthpod-JACK:synthpod_jack:nRNFD
 samplv1:samplv1_jack:nHAUG
@@ -16,4 +17,3 @@ Synthpod-JACK:synthpod_jack:nRIEG
 Synthpod-JACK:synthpod_jack:nJAJT
 Synthpod-JACK:synthpod_jack:nQWRM
 Synthpod-JACK:synthpod_jack:nMSLI
-Synthpod-JACK:synthpod_jack:nROMP

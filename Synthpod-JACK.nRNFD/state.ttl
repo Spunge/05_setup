@@ -42,8 +42,7 @@
 			<urn:uuid:131bb957-302b-44c8-9aa5-509f005c41f9> [
 				a <http://www.openavproductions.com/artyfx#filta> ;
 				spod:modulePositionX "892.0"^^xsd:float ;
-				spod:modulePositionY "280.0"^^xsd:float ;
-				ui:ui <http://www.openavproductions.com/artyfx#filta/gui>
+				spod:modulePositionY "280.0"^^xsd:float
 			] ;
 			<urn:uuid:416360c5-6738-4df8-b083-de9a3550b80f> [
 				a spod:sink ;

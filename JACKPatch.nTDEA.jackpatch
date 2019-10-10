@@ -1,7 +1,3 @@
-Firefox Developer Edition:AudioCallbackDriver_1_out_0 |> system:playback_1
-Firefox Developer Edition:AudioCallbackDriver_1_out_1 |> system:playback_2
-Firefox Developer Edition:AudioStream_0_out_0 |> system:playback_1
-Firefox Developer Edition:AudioStream_0_out_1 |> system:playback_2
 Non-Mixer.nSOHG (bass):port10/out-1      |> Non-Mixer.nSOHG (bus):bass/in-1
 Non-Mixer.nSOHG (bass):port10/out-2      |> Non-Mixer.nSOHG (bus):bass/in-2
 Non-Mixer.nSOHG (bass):port11/out-1      |> Non-Mixer.nSOHG (bus):bass/in-1

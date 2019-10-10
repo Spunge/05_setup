@@ -115,7 +115,7 @@
 		<http://gareus.org/oss/lv2/fil4#fftchannel> "-1"^^xsd:int ;
 		<http://gareus.org/oss/lv2/fil4#dbscale> "30.0"^^xsd:float ;
 		<http://gareus.org/oss/lv2/fil4#fftmode> "4609"^^xsd:int ;
-		<http://gareus.org/oss/lv2/fil4#uiscale> "1.0"^^xsd:float ,
+		<http://gareus.org/oss/lv2/fil4#uiscale> "440.0"^^xsd:float ,
 			"440.0"^^xsd:float
 	] .
 
