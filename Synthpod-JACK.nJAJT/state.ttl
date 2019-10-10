@@ -47,7 +47,8 @@
 			<urn:uuid:cc07edd3-954e-46b2-a396-553c9d0c0650> [
 				a <http://calf.sourceforge.net/plugins/SidechainCompressor> ;
 				spod:modulePositionX "689.0"^^xsd:float ;
-				spod:modulePositionY "286.0"^^xsd:float
+				spod:modulePositionY "286.0"^^xsd:float ;
+				ui:ui <http://calf.sourceforge.net/plugins/gui/gtk2-gui>
 			] ;
 			<urn:uuid:416360c5-6738-4df8-b083-de9a3550b80f> [
 				a spod:sink ;
@@ -609,9 +610,9 @@
 				]
 			)
 		] ;
-		spod:graphPositionX "-225.0"^^xsd:float ;
-		spod:graphPositionY "-191.0"^^xsd:float ;
-		spod:columnEnabled true ;
-		spod:rowEnabled true
+		spod:graphPositionX "-362.0"^^xsd:float ;
+		spod:graphPositionY "-6.0"^^xsd:float ;
+		spod:columnEnabled false ;
+		spod:rowEnabled false
 	] .
 

@@ -12,7 +12,7 @@
 	rdfs:label "state" ;
 	lv2:port [
 		lv2:symbol "attack" ;
-		pset:value 20.0
+		pset:value 47.25385666
 	] , [
 		lv2:symbol "bypass" ;
 		pset:value false
@@ -51,7 +51,7 @@
 		pset:value 377.96087646
 	] , [
 		lv2:symbol "sc_level" ;
-		pset:value 4.5499506
+		pset:value 15.63385868
 	] , [
 		lv2:symbol "sc_listen" ;
 		pset:value false
@@ -66,6 +66,6 @@
 		pset:value 1
 	] , [
 		lv2:symbol "threshold" ;
-		pset:value 0.19763473
+		pset:value 0.18190207
 	] .
 

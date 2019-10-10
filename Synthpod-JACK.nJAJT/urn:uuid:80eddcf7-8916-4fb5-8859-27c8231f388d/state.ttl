@@ -15,10 +15,10 @@
 		pset:value 333.46456909
 	] , [
 		lv2:symbol "decay" ;
-		pset:value 0.56771654
+		pset:value 2.90629911
 	] , [
 		lv2:symbol "diffuse" ;
-		pset:value 67.71653748
+		pset:value 62.99212646
 	] , [
 		lv2:symbol "dry_level" ;
 		pset:value 100.0
@@ -42,10 +42,10 @@
 		pset:value 5842.51953125
 	] , [
 		lv2:symbol "late_level" ;
-		pset:value 7.08661413
+		pset:value 40.15748215
 	] , [
 		lv2:symbol "low_boost" ;
-		pset:value 49.60630035
+		pset:value 51.96850204
 	] , [
 		lv2:symbol "predelay" ;
 		pset:value 92.91338348
@@ -57,7 +57,7 @@
 		pset:value 0.40000001
 	] , [
 		lv2:symbol "wander" ;
-		pset:value 80.31496429
+		pset:value 76.37795258
 	] , [
 		lv2:symbol "width" ;
 		pset:value 64.1732254
