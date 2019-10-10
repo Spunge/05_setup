@@ -29,16 +29,10 @@
 				spod:modulePositionX "-129.0"^^xsd:float ;
 				spod:modulePositionY "130.0"^^xsd:float
 			] ;
-			<urn:uuid:bcec3231-18f1-48d9-9704-b81f39c3dcbc> [
-				a <http://ssj71.github.io/infamousPlugins/plugs.html#casynth> ;
-				spod:modulePositionX "5.0"^^xsd:float ;
-				spod:modulePositionY "341.0"^^xsd:float ;
-				ui:ui <http://ssj71.github.io/infamousPlugins/plugs.html#casynth_ui>
-			] ;
-			<urn:uuid:40307d79-a8d6-4290-8466-d9944991fc5e> [
-				a spod:midisplitter ;
-				spod:modulePositionX "35.0"^^xsd:float ;
-				spod:modulePositionY "193.0"^^xsd:float
+			<urn:uuid:15ad314f-aeba-4064-bb66-3dcc64c49692> [
+				a <http://zynaddsubfx.sourceforge.net> ;
+				spod:modulePositionX "-13.0"^^xsd:float ;
+				spod:modulePositionY "278.0"^^xsd:float
 			] ;
 			<urn:uuid:1d96a3b2-769b-4ad8-ac72-89713fcaf870> [
 				a <http://gareus.org/oss/lv2/fil4#stereo> ;
@@ -66,26 +60,20 @@
 			a atom:Tuple ;
 			rdf:value (
 				[
-					spod:sourceModule <urn:uuid:40307d79-a8d6-4290-8466-d9944991fc5e> ;
-					spod:sourceSymbol "midi_out_6" ;
-					spod:sinkModule <urn:uuid:bcec3231-18f1-48d9-9704-b81f39c3dcbc> ;
-					spod:sinkSymbol "MIDI_IN" ;
-					param:gain "1.0"^^xsd:float
-				] [
 					spod:sourceModule <urn:uuid:2ad84cd6-a885-41e4-a61c-de524cc2d370> ;
 					spod:sourceSymbol "midi_source" ;
-					spod:sinkModule <urn:uuid:40307d79-a8d6-4290-8466-d9944991fc5e> ;
-					spod:sinkSymbol "midi_in" ;
+					spod:sinkModule <urn:uuid:15ad314f-aeba-4064-bb66-3dcc64c49692> ;
+					spod:sinkSymbol "lv2_events_in" ;
 					param:gain "1.0"^^xsd:float
 				] [
-					spod:sourceModule <urn:uuid:bcec3231-18f1-48d9-9704-b81f39c3dcbc> ;
-					spod:sourceSymbol "OUTPUT" ;
+					spod:sourceModule <urn:uuid:15ad314f-aeba-4064-bb66-3dcc64c49692> ;
+					spod:sourceSymbol "lv2_audio_out_1" ;
 					spod:sinkModule <urn:uuid:1d96a3b2-769b-4ad8-ac72-89713fcaf870> ;
 					spod:sinkSymbol "inL" ;
 					param:gain "1.0"^^xsd:float
 				] [
-					spod:sourceModule <urn:uuid:bcec3231-18f1-48d9-9704-b81f39c3dcbc> ;
-					spod:sourceSymbol "OUTPUT" ;
+					spod:sourceModule <urn:uuid:15ad314f-aeba-4064-bb66-3dcc64c49692> ;
+					spod:sourceSymbol "lv2_audio_out_2" ;
 					spod:sinkModule <urn:uuid:1d96a3b2-769b-4ad8-ac72-89713fcaf870> ;
 					spod:sinkSymbol "inR" ;
 					param:gain "1.0"^^xsd:float
@@ -180,22 +168,17 @@
 			a atom:Tuple ;
 			rdf:value (
 				[
-					spod:sourceModule <urn:uuid:40307d79-a8d6-4290-8466-d9944991fc5e> ;
-					spod:sinkModule <urn:uuid:bcec3231-18f1-48d9-9704-b81f39c3dcbc> ;
-					spod:nodePositionX "-91.5"^^xsd:float ;
-					spod:nodePositionY "282.0"^^xsd:float
-				] [
 					spod:sourceModule <urn:uuid:2ad84cd6-a885-41e4-a61c-de524cc2d370> ;
-					spod:sinkModule <urn:uuid:40307d79-a8d6-4290-8466-d9944991fc5e> ;
-					spod:nodePositionX "-84.5"^^xsd:float ;
-					spod:nodePositionY "222.0"^^xsd:float
+					spod:sinkModule <urn:uuid:15ad314f-aeba-4064-bb66-3dcc64c49692> ;
+					spod:nodePositionX "0.0"^^xsd:float ;
+					spod:nodePositionY "0.0"^^xsd:float
 				] [
 					spod:sourceModule <urn:uuid:d977c817-5514-4adb-b282-98b14fb4948f> ;
 					spod:sinkModule <urn:uuid:1d96a3b2-769b-4ad8-ac72-89713fcaf870> ;
 					spod:nodePositionX "126.0"^^xsd:float ;
 					spod:nodePositionY "233.0"^^xsd:float
 				] [
-					spod:sourceModule <urn:uuid:bcec3231-18f1-48d9-9704-b81f39c3dcbc> ;
+					spod:sourceModule <urn:uuid:15ad314f-aeba-4064-bb66-3dcc64c49692> ;
 					spod:sinkModule <urn:uuid:1d96a3b2-769b-4ad8-ac72-89713fcaf870> ;
 					spod:nodePositionX "119.0"^^xsd:float ;
 					spod:nodePositionY "301.5"^^xsd:float
