@@ -8,13 +8,28 @@
 
 <>
 	a pset:Preset ;
-	lv2:appliesTo <http://www.openavproductions.com/artyfx#filta> ;
+	lv2:appliesTo <http://calf.sourceforge.net/plugins/Filter> ;
 	rdfs:label "state" ;
 	lv2:port [
-		lv2:symbol "active" ;
-		pset:value true
+		lv2:symbol "bypass" ;
+		pset:value false
 	] , [
-		lv2:symbol "frequency_control" ;
-		pset:value 0.30708662
+		lv2:symbol "freq" ;
+		pset:value 10.0
+	] , [
+		lv2:symbol "inertia" ;
+		pset:value 20.0
+	] , [
+		lv2:symbol "level_in" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "level_out" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "mode" ;
+		pset:value 3
+	] , [
+		lv2:symbol "res" ;
+		pset:value 1.10023177
 	] .
 

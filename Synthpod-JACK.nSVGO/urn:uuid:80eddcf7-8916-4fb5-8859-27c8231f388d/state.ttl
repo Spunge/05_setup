@@ -48,10 +48,10 @@
 		pset:value 86.61417389
 	] , [
 		lv2:symbol "predelay" ;
-		pset:value 4.72440958
+		pset:value 8.66141701
 	] , [
 		lv2:symbol "size" ;
-		pset:value 10.64566898
+		pset:value 8.0
 	] , [
 		lv2:symbol "spin" ;
 		pset:value 0.40000001
