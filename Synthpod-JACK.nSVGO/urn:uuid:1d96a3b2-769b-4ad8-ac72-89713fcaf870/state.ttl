@@ -24,7 +24,7 @@
 		pset:value 2.40944886
 	] , [
 		lv2:symbol "HSq" ;
-		pset:value 0.52755904
+		pset:value 0.24852362
 	] , [
 		lv2:symbol "HSsec" ;
 		pset:value true

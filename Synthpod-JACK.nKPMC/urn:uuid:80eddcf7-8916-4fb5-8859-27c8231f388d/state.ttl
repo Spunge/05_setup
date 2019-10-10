@@ -15,7 +15,7 @@
 		pset:value 601.18109131
 	] , [
 		lv2:symbol "decay" ;
-		pset:value 1.19133854
+		pset:value 0.48976377
 	] , [
 		lv2:symbol "diffuse" ;
 		pset:value 18.89763832
@@ -27,10 +27,10 @@
 		pset:value 8677.16503906
 	] , [
 		lv2:symbol "early_level" ;
-		pset:value 3.14960623
+		pset:value 5.51181126
 	] , [
 		lv2:symbol "early_send" ;
-		pset:value 21.25984192
+		pset:value 0.0
 	] , [
 		lv2:symbol "in_high_cut" ;
 		pset:value 11275.59082031
@@ -42,7 +42,7 @@
 		pset:value 7850.39355469
 	] , [
 		lv2:symbol "late_level" ;
-		pset:value 22.04724503
+		pset:value 1.57480311
 	] , [
 		lv2:symbol "low_boost" ;
 		pset:value 86.61417389
