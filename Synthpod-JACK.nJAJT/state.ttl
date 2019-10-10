@@ -1,0 +1,618 @@
+@prefix midi: <http://lv2plug.in/ns/ext/midi#> .
+@prefix atom: <http://lv2plug.in/ns/ext/atom#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix lv2: <http://lv2plug.in/ns/lv2core#> .
+@prefix pset: <http://lv2plug.in/ns/ext/presets#> .
+@prefix param: <http://lv2plug.in/ns/ext/parameters#> .
+@prefix state: <http://lv2plug.in/ns/ext/state#> .
+@prefix ui: <http://lv2plug.in/ns/extensions/ui#> .
+@prefix spod: <http://open-music-kontrollers.ch/lv2/synthpod#> .
+
+<file:///tmp/base/>
+	a pset:Preset ;
+	lv2:appliesTo spod:stereo ,
+		spod:monoatom ;
+	rdfs:label "/home/johan/NSM Sessions/05_setup/Synthpod-JACK.nJAJT" ;
+	state:state [
+		lv2:minorVersion "1"^^xsd:int ;
+		lv2:microVersion "6137"^^xsd:int ;
+		spod:moduleList [
+			<urn:uuid:2ad84cd6-a885-41e4-a61c-de524cc2d370> [
+				a <http://open-music-kontrollers.ch/lv2/synthpod#midi_source> ;
+				spod:modulePositionX "-209.0"^^xsd:float ;
+				spod:modulePositionY "197.0"^^xsd:float
+			] ;
+			<urn:uuid:d977c817-5514-4adb-b282-98b14fb4948f> [
+				a spod:source ;
+				spod:modulePositionX "-129.0"^^xsd:float ;
+				spod:modulePositionY "130.0"^^xsd:float
+			] ;
+			<urn:uuid:15ad314f-aeba-4064-bb66-3dcc64c49692> [
+				a <http://zynaddsubfx.sourceforge.net> ;
+				spod:modulePositionX "-13.0"^^xsd:float ;
+				spod:modulePositionY "278.0"^^xsd:float
+			] ;
+			<urn:uuid:1d96a3b2-769b-4ad8-ac72-89713fcaf870> [
+				a <http://gareus.org/oss/lv2/fil4#stereo> ;
+				spod:modulePositionX "242.0"^^xsd:float ;
+				spod:modulePositionY "280.0"^^xsd:float
+			] ;
+			<urn:uuid:80eddcf7-8916-4fb5-8859-27c8231f388d> [
+				a <urn:dragonfly:room> ;
+				spod:modulePositionX "463.0"^^xsd:float ;
+				spod:modulePositionY "280.0"^^xsd:float
+			] ;
+			<urn:uuid:cc07edd3-954e-46b2-a396-553c9d0c0650> [
+				a <http://calf.sourceforge.net/plugins/SidechainCompressor> ;
+				spod:modulePositionX "689.0"^^xsd:float ;
+				spod:modulePositionY "286.0"^^xsd:float ;
+				ui:ui <http://calf.sourceforge.net/plugins/gui/gtk2-gui>
+			] ;
+			<urn:uuid:416360c5-6738-4df8-b083-de9a3550b80f> [
+				a spod:sink ;
+				spod:modulePositionX "894.0"^^xsd:float ;
+				spod:modulePositionY "158.0"^^xsd:float
+			]
+		] ;
+		spod:connectionList [
+			a atom:Tuple ;
+			rdf:value (
+				[
+					spod:sourceModule <urn:uuid:2ad84cd6-a885-41e4-a61c-de524cc2d370> ;
+					spod:sourceSymbol "midi_source" ;
+					spod:sinkModule <urn:uuid:15ad314f-aeba-4064-bb66-3dcc64c49692> ;
+					spod:sinkSymbol "lv2_events_in" ;
+					param:gain "1.0"^^xsd:float
+				] [
+					spod:sourceModule <urn:uuid:15ad314f-aeba-4064-bb66-3dcc64c49692> ;
+					spod:sourceSymbol "lv2_audio_out_1" ;
+					spod:sinkModule <urn:uuid:1d96a3b2-769b-4ad8-ac72-89713fcaf870> ;
+					spod:sinkSymbol "inL" ;
+					param:gain "1.0"^^xsd:float
+				] [
+					spod:sourceModule <urn:uuid:15ad314f-aeba-4064-bb66-3dcc64c49692> ;
+					spod:sourceSymbol "lv2_audio_out_2" ;
+					spod:sinkModule <urn:uuid:1d96a3b2-769b-4ad8-ac72-89713fcaf870> ;
+					spod:sinkSymbol "inR" ;
+					param:gain "1.0"^^xsd:float
+				] [
+					spod:sourceModule <urn:uuid:d977c817-5514-4adb-b282-98b14fb4948f> ;
+					spod:sourceSymbol "event_source" ;
+					spod:sinkModule <urn:uuid:1d96a3b2-769b-4ad8-ac72-89713fcaf870> ;
+					spod:sinkSymbol "__automation__in__" ;
+					param:gain "1.0"^^xsd:float
+				] [
+					spod:sourceModule <urn:uuid:1d96a3b2-769b-4ad8-ac72-89713fcaf870> ;
+					spod:sourceSymbol "outL" ;
+					spod:sinkModule <urn:uuid:80eddcf7-8916-4fb5-8859-27c8231f388d> ;
+					spod:sinkSymbol "lv2_audio_in_1" ;
+					param:gain "1.0"^^xsd:float
+				] [
+					spod:sourceModule <urn:uuid:1d96a3b2-769b-4ad8-ac72-89713fcaf870> ;
+					spod:sourceSymbol "outR" ;
+					spod:sinkModule <urn:uuid:80eddcf7-8916-4fb5-8859-27c8231f388d> ;
+					spod:sinkSymbol "lv2_audio_in_2" ;
+					param:gain "1.0"^^xsd:float
+				] [
+					spod:sourceModule <urn:uuid:d977c817-5514-4adb-b282-98b14fb4948f> ;
+					spod:sourceSymbol "event_source" ;
+					spod:sinkModule <urn:uuid:80eddcf7-8916-4fb5-8859-27c8231f388d> ;
+					spod:sinkSymbol "__automation__in__" ;
+					param:gain "1.0"^^xsd:float
+				] [
+					spod:sourceModule <urn:uuid:80eddcf7-8916-4fb5-8859-27c8231f388d> ;
+					spod:sourceSymbol "lv2_audio_out_1" ;
+					spod:sinkModule <urn:uuid:cc07edd3-954e-46b2-a396-553c9d0c0650> ;
+					spod:sinkSymbol "in_l" ;
+					param:gain "1.0"^^xsd:float
+				] [
+					spod:sourceModule <urn:uuid:80eddcf7-8916-4fb5-8859-27c8231f388d> ;
+					spod:sourceSymbol "lv2_audio_out_2" ;
+					spod:sinkModule <urn:uuid:cc07edd3-954e-46b2-a396-553c9d0c0650> ;
+					spod:sinkSymbol "in_r" ;
+					param:gain "1.0"^^xsd:float
+				] [
+					spod:sourceModule <urn:uuid:d977c817-5514-4adb-b282-98b14fb4948f> ;
+					spod:sourceSymbol "audio_source_1" ;
+					spod:sinkModule <urn:uuid:cc07edd3-954e-46b2-a396-553c9d0c0650> ;
+					spod:sinkSymbol "sidechain" ;
+					param:gain "1.0"^^xsd:float
+				] [
+					spod:sourceModule <urn:uuid:d977c817-5514-4adb-b282-98b14fb4948f> ;
+					spod:sourceSymbol "audio_source_2" ;
+					spod:sinkModule <urn:uuid:cc07edd3-954e-46b2-a396-553c9d0c0650> ;
+					spod:sinkSymbol "sidechain2" ;
+					param:gain "1.0"^^xsd:float
+				] [
+					spod:sourceModule <urn:uuid:d977c817-5514-4adb-b282-98b14fb4948f> ;
+					spod:sourceSymbol "event_source" ;
+					spod:sinkModule <urn:uuid:cc07edd3-954e-46b2-a396-553c9d0c0650> ;
+					spod:sinkSymbol "__automation__in__" ;
+					param:gain "1.0"^^xsd:float
+				] [
+					spod:sourceModule <urn:uuid:80eddcf7-8916-4fb5-8859-27c8231f388d> ;
+					spod:sourceSymbol "__automation__out__" ;
+					spod:sinkModule <urn:uuid:416360c5-6738-4df8-b083-de9a3550b80f> ;
+					spod:sinkSymbol "event_sink" ;
+					param:gain "1.0"^^xsd:float
+				] [
+					spod:sourceModule <urn:uuid:1d96a3b2-769b-4ad8-ac72-89713fcaf870> ;
+					spod:sourceSymbol "__automation__out__" ;
+					spod:sinkModule <urn:uuid:416360c5-6738-4df8-b083-de9a3550b80f> ;
+					spod:sinkSymbol "event_sink" ;
+					param:gain "1.0"^^xsd:float
+				] [
+					spod:sourceModule <urn:uuid:cc07edd3-954e-46b2-a396-553c9d0c0650> ;
+					spod:sourceSymbol "__automation__out__" ;
+					spod:sinkModule <urn:uuid:416360c5-6738-4df8-b083-de9a3550b80f> ;
+					spod:sinkSymbol "event_sink" ;
+					param:gain "1.0"^^xsd:float
+				] [
+					spod:sourceModule <urn:uuid:cc07edd3-954e-46b2-a396-553c9d0c0650> ;
+					spod:sourceSymbol "out_l" ;
+					spod:sinkModule <urn:uuid:416360c5-6738-4df8-b083-de9a3550b80f> ;
+					spod:sinkSymbol "audio_sink_1" ;
+					param:gain "1.0"^^xsd:float
+				] [
+					spod:sourceModule <urn:uuid:cc07edd3-954e-46b2-a396-553c9d0c0650> ;
+					spod:sourceSymbol "out_r" ;
+					spod:sinkModule <urn:uuid:416360c5-6738-4df8-b083-de9a3550b80f> ;
+					spod:sinkSymbol "audio_sink_2" ;
+					param:gain "1.0"^^xsd:float
+				]
+			)
+		] ;
+		spod:nodeList [
+			a atom:Tuple ;
+			rdf:value (
+				[
+					spod:sourceModule <urn:uuid:2ad84cd6-a885-41e4-a61c-de524cc2d370> ;
+					spod:sinkModule <urn:uuid:15ad314f-aeba-4064-bb66-3dcc64c49692> ;
+					spod:nodePositionX "0.0"^^xsd:float ;
+					spod:nodePositionY "0.0"^^xsd:float
+				] [
+					spod:sourceModule <urn:uuid:d977c817-5514-4adb-b282-98b14fb4948f> ;
+					spod:sinkModule <urn:uuid:1d96a3b2-769b-4ad8-ac72-89713fcaf870> ;
+					spod:nodePositionX "126.0"^^xsd:float ;
+					spod:nodePositionY "233.0"^^xsd:float
+				] [
+					spod:sourceModule <urn:uuid:15ad314f-aeba-4064-bb66-3dcc64c49692> ;
+					spod:sinkModule <urn:uuid:1d96a3b2-769b-4ad8-ac72-89713fcaf870> ;
+					spod:nodePositionX "119.0"^^xsd:float ;
+					spod:nodePositionY "301.5"^^xsd:float
+				] [
+					spod:sourceModule <urn:uuid:d977c817-5514-4adb-b282-98b14fb4948f> ;
+					spod:sinkModule <urn:uuid:80eddcf7-8916-4fb5-8859-27c8231f388d> ;
+					spod:nodePositionX "358.0"^^xsd:float ;
+					spod:nodePositionY "244.5"^^xsd:float
+				] [
+					spod:sourceModule <urn:uuid:1d96a3b2-769b-4ad8-ac72-89713fcaf870> ;
+					spod:sinkModule <urn:uuid:80eddcf7-8916-4fb5-8859-27c8231f388d> ;
+					spod:nodePositionX "343.5"^^xsd:float ;
+					spod:nodePositionY "333.5"^^xsd:float
+				] [
+					spod:sourceModule <urn:uuid:d977c817-5514-4adb-b282-98b14fb4948f> ;
+					spod:sinkModule <urn:uuid:cc07edd3-954e-46b2-a396-553c9d0c0650> ;
+					spod:nodePositionX "571.0"^^xsd:float ;
+					spod:nodePositionY "226.0"^^xsd:float
+				] [
+					spod:sourceModule <urn:uuid:80eddcf7-8916-4fb5-8859-27c8231f388d> ;
+					spod:sinkModule <urn:uuid:cc07edd3-954e-46b2-a396-553c9d0c0650> ;
+					spod:nodePositionX "571.0"^^xsd:float ;
+					spod:nodePositionY "363.0"^^xsd:float
+				] [
+					spod:sourceModule <urn:uuid:1d96a3b2-769b-4ad8-ac72-89713fcaf870> ;
+					spod:sinkModule <urn:uuid:416360c5-6738-4df8-b083-de9a3550b80f> ;
+					spod:nodePositionX "772.5"^^xsd:float ;
+					spod:nodePositionY "136.0"^^xsd:float
+				] [
+					spod:sourceModule <urn:uuid:80eddcf7-8916-4fb5-8859-27c8231f388d> ;
+					spod:sinkModule <urn:uuid:416360c5-6738-4df8-b083-de9a3550b80f> ;
+					spod:nodePositionX "0.0"^^xsd:float ;
+					spod:nodePositionY "0.0"^^xsd:float
+				] [
+					spod:sourceModule <urn:uuid:cc07edd3-954e-46b2-a396-553c9d0c0650> ;
+					spod:sinkModule <urn:uuid:416360c5-6738-4df8-b083-de9a3550b80f> ;
+					spod:nodePositionX "814.5"^^xsd:float ;
+					spod:nodePositionY "318.0"^^xsd:float
+				]
+			)
+		] ;
+		spod:automationList [
+			a atom:Tuple ;
+			rdf:value (
+				[
+					a midi:Controller ;
+					spod:sinkModule <urn:uuid:1d96a3b2-769b-4ad8-ac72-89713fcaf870> ;
+					midi:channel "3"^^xsd:int ;
+					midi:controllerNumber "0"^^xsd:int ;
+					spod:sourceMinimum "0.0"^^xsd:double ;
+					spod:sourceMaximum "127.0"^^xsd:double ;
+					spod:sinkMinimum "5.0"^^xsd:double ;
+					spod:sinkMaximum "1250.0"^^xsd:double ;
+					spod:sourceEnabled true ;
+					spod:sinkEnabled true ;
+					spod:sinkSymbol "HPfreq"
+				] [
+					a midi:Controller ;
+					spod:sinkModule <urn:uuid:1d96a3b2-769b-4ad8-ac72-89713fcaf870> ;
+					midi:channel "3"^^xsd:int ;
+					midi:controllerNumber "1"^^xsd:int ;
+					spod:sourceMinimum "0.0"^^xsd:double ;
+					spod:sourceMaximum "127.0"^^xsd:double ;
+					spod:sinkMinimum "25.0"^^xsd:double ;
+					spod:sinkMaximum "400.0"^^xsd:double ;
+					spod:sourceEnabled true ;
+					spod:sinkEnabled true ;
+					spod:sinkSymbol "LSfreq"
+				] [
+					a midi:Controller ;
+					spod:sinkModule <urn:uuid:1d96a3b2-769b-4ad8-ac72-89713fcaf870> ;
+					midi:channel "3"^^xsd:int ;
+					midi:controllerNumber "4"^^xsd:int ;
+					spod:sourceMinimum "0.0"^^xsd:double ;
+					spod:sourceMaximum "127.0"^^xsd:double ;
+					spod:sinkMinimum "-18.0"^^xsd:double ;
+					spod:sinkMaximum "18.0"^^xsd:double ;
+					spod:sourceEnabled true ;
+					spod:sinkEnabled true ;
+					spod:sinkSymbol "LSgain"
+				] [
+					a midi:Controller ;
+					spod:sinkModule <urn:uuid:1d96a3b2-769b-4ad8-ac72-89713fcaf870> ;
+					midi:channel "3"^^xsd:int ;
+					midi:controllerNumber "5"^^xsd:int ;
+					spod:sourceMinimum "0.0"^^xsd:double ;
+					spod:sourceMaximum "127.0"^^xsd:double ;
+					spod:sinkMinimum "0.0"^^xsd:double ;
+					spod:sinkMaximum "1.3999999761581419"^^xsd:double ;
+					spod:sourceEnabled true ;
+					spod:sinkEnabled true ;
+					spod:sinkSymbol "HPQ"
+				] [
+					a midi:Controller ;
+					spod:sinkModule <urn:uuid:1d96a3b2-769b-4ad8-ac72-89713fcaf870> ;
+					midi:channel "3"^^xsd:int ;
+					midi:controllerNumber "2"^^xsd:int ;
+					spod:sourceMinimum "0.0"^^xsd:double ;
+					spod:sourceMaximum "127.0"^^xsd:double ;
+					spod:sinkMinimum "1000.0"^^xsd:double ;
+					spod:sinkMaximum "16000.0"^^xsd:double ;
+					spod:sourceEnabled true ;
+					spod:sinkEnabled true ;
+					spod:sinkSymbol "HSfreq"
+				] [
+					a midi:Controller ;
+					spod:sinkModule <urn:uuid:1d96a3b2-769b-4ad8-ac72-89713fcaf870> ;
+					midi:channel "3"^^xsd:int ;
+					midi:controllerNumber "3"^^xsd:int ;
+					spod:sourceMinimum "0.0"^^xsd:double ;
+					spod:sourceMaximum "127.0"^^xsd:double ;
+					spod:sinkMinimum "500.0"^^xsd:double ;
+					spod:sinkMaximum "20000.0"^^xsd:double ;
+					spod:sourceEnabled true ;
+					spod:sinkEnabled true ;
+					spod:sinkSymbol "LPfreq"
+				] [
+					a midi:Controller ;
+					spod:sinkModule <urn:uuid:1d96a3b2-769b-4ad8-ac72-89713fcaf870> ;
+					midi:channel "3"^^xsd:int ;
+					midi:controllerNumber "6"^^xsd:int ;
+					spod:sourceMinimum "0.0"^^xsd:double ;
+					spod:sourceMaximum "127.0"^^xsd:double ;
+					spod:sinkMinimum "0.0625"^^xsd:double ;
+					spod:sinkMaximum "4.0"^^xsd:double ;
+					spod:sourceEnabled true ;
+					spod:sinkEnabled true ;
+					spod:sinkSymbol "HSq"
+				] [
+					a midi:Controller ;
+					spod:sinkModule <urn:uuid:1d96a3b2-769b-4ad8-ac72-89713fcaf870> ;
+					midi:channel "3"^^xsd:int ;
+					midi:controllerNumber "7"^^xsd:int ;
+					spod:sourceMinimum "0.0"^^xsd:double ;
+					spod:sourceMaximum "127.0"^^xsd:double ;
+					spod:sinkMinimum "-18.0"^^xsd:double ;
+					spod:sinkMaximum "18.0"^^xsd:double ;
+					spod:sourceEnabled true ;
+					spod:sinkEnabled true ;
+					spod:sinkSymbol "HSgain"
+				] [
+					a midi:Controller ;
+					spod:sinkModule <urn:uuid:80eddcf7-8916-4fb5-8859-27c8231f388d> ;
+					midi:channel "3"^^xsd:int ;
+					midi:controllerNumber "16"^^xsd:int ;
+					spod:sourceMinimum "0.0"^^xsd:double ;
+					spod:sourceMaximum "127.0"^^xsd:double ;
+					spod:sinkMinimum "0.0"^^xsd:double ;
+					spod:sinkMaximum "100.0"^^xsd:double ;
+					spod:sourceEnabled true ;
+					spod:sinkEnabled true ;
+					spod:sinkSymbol "dry_level"
+				] [
+					a midi:Controller ;
+					spod:sinkModule <urn:uuid:80eddcf7-8916-4fb5-8859-27c8231f388d> ;
+					midi:channel "3"^^xsd:int ;
+					midi:controllerNumber "17"^^xsd:int ;
+					spod:sourceMinimum "0.0"^^xsd:double ;
+					spod:sourceMaximum "127.0"^^xsd:double ;
+					spod:sinkMinimum "0.0"^^xsd:double ;
+					spod:sinkMaximum "100.0"^^xsd:double ;
+					spod:sourceEnabled true ;
+					spod:sinkEnabled true ;
+					spod:sinkSymbol "early_level"
+				] [
+					a midi:Controller ;
+					spod:sinkModule <urn:uuid:80eddcf7-8916-4fb5-8859-27c8231f388d> ;
+					midi:channel "3"^^xsd:int ;
+					midi:controllerNumber "18"^^xsd:int ;
+					spod:sourceMinimum "0.0"^^xsd:double ;
+					spod:sourceMaximum "127.0"^^xsd:double ;
+					spod:sinkMinimum "0.0"^^xsd:double ;
+					spod:sinkMaximum "100.0"^^xsd:double ;
+					spod:sourceEnabled true ;
+					spod:sinkEnabled true ;
+					spod:sinkSymbol "early_send"
+				] [
+					a midi:Controller ;
+					spod:sinkModule <urn:uuid:80eddcf7-8916-4fb5-8859-27c8231f388d> ;
+					midi:channel "3"^^xsd:int ;
+					midi:controllerNumber "19"^^xsd:int ;
+					spod:sourceMinimum "0.0"^^xsd:double ;
+					spod:sourceMaximum "127.0"^^xsd:double ;
+					spod:sinkMinimum "0.0"^^xsd:double ;
+					spod:sinkMaximum "100.0"^^xsd:double ;
+					spod:sourceEnabled true ;
+					spod:sinkEnabled true ;
+					spod:sinkSymbol "late_level"
+				] [
+					a midi:Controller ;
+					spod:sinkModule <urn:uuid:80eddcf7-8916-4fb5-8859-27c8231f388d> ;
+					midi:channel "3"^^xsd:int ;
+					midi:controllerNumber "24"^^xsd:int ;
+					spod:sourceMinimum "0.0"^^xsd:double ;
+					spod:sourceMaximum "127.0"^^xsd:double ;
+					spod:sinkMinimum "1000.0"^^xsd:double ;
+					spod:sinkMaximum "16000.0"^^xsd:double ;
+					spod:sourceEnabled true ;
+					spod:sinkEnabled true ;
+					spod:sinkSymbol "in_high_cut"
+				] [
+					a midi:Controller ;
+					spod:sinkModule <urn:uuid:80eddcf7-8916-4fb5-8859-27c8231f388d> ;
+					midi:channel "3"^^xsd:int ;
+					midi:controllerNumber "20"^^xsd:int ;
+					spod:sourceMinimum "0.0"^^xsd:double ;
+					spod:sourceMaximum "127.0"^^xsd:double ;
+					spod:sinkMinimum "8.0"^^xsd:double ;
+					spod:sinkMaximum "32.0"^^xsd:double ;
+					spod:sourceEnabled true ;
+					spod:sinkEnabled true ;
+					spod:sinkSymbol "size"
+				] [
+					a midi:Controller ;
+					spod:sinkModule <urn:uuid:80eddcf7-8916-4fb5-8859-27c8231f388d> ;
+					midi:channel "3"^^xsd:int ;
+					midi:controllerNumber "21"^^xsd:int ;
+					spod:sourceMinimum "0.0"^^xsd:double ;
+					spod:sourceMaximum "127.0"^^xsd:double ;
+					spod:sinkMinimum "50.0"^^xsd:double ;
+					spod:sinkMaximum "150.0"^^xsd:double ;
+					spod:sourceEnabled true ;
+					spod:sinkEnabled true ;
+					spod:sinkSymbol "width"
+				] [
+					a midi:Controller ;
+					spod:sinkModule <urn:uuid:80eddcf7-8916-4fb5-8859-27c8231f388d> ;
+					midi:channel "3"^^xsd:int ;
+					midi:controllerNumber "22"^^xsd:int ;
+					spod:sourceMinimum "0.0"^^xsd:double ;
+					spod:sourceMaximum "127.0"^^xsd:double ;
+					spod:sinkMinimum "0.0"^^xsd:double ;
+					spod:sinkMaximum "100.0"^^xsd:double ;
+					spod:sourceEnabled true ;
+					spod:sinkEnabled true ;
+					spod:sinkSymbol "predelay"
+				] [
+					a midi:Controller ;
+					spod:sinkModule <urn:uuid:80eddcf7-8916-4fb5-8859-27c8231f388d> ;
+					midi:channel "3"^^xsd:int ;
+					midi:controllerNumber "23"^^xsd:int ;
+					spod:sourceMinimum "0.0"^^xsd:double ;
+					spod:sourceMaximum "127.0"^^xsd:double ;
+					spod:sinkMinimum "0.1000000014901161"^^xsd:double ;
+					spod:sinkMaximum "10.0"^^xsd:double ;
+					spod:sourceEnabled true ;
+					spod:sinkEnabled true ;
+					spod:sinkSymbol "decay"
+				] [
+					a midi:Controller ;
+					spod:sinkModule <urn:uuid:80eddcf7-8916-4fb5-8859-27c8231f388d> ;
+					midi:channel "3"^^xsd:int ;
+					midi:controllerNumber "-39"^^xsd:int ;
+					spod:sourceMinimum "0.0"^^xsd:double ;
+					spod:sourceMaximum "127.0"^^xsd:double ;
+					spod:sinkMinimum "0.0"^^xsd:double ;
+					spod:sinkMaximum "200.0"^^xsd:double ;
+					spod:sourceEnabled true ;
+					spod:sinkEnabled true ;
+					spod:sinkSymbol "in_low_cut"
+				] [
+					a midi:Controller ;
+					spod:sinkModule <urn:uuid:80eddcf7-8916-4fb5-8859-27c8231f388d> ;
+					midi:channel "3"^^xsd:int ;
+					midi:controllerNumber "-36"^^xsd:int ;
+					spod:sourceMinimum "0.0"^^xsd:double ;
+					spod:sourceMaximum "127.0"^^xsd:double ;
+					spod:sinkMinimum "1000.0"^^xsd:double ;
+					spod:sinkMaximum "16000.0"^^xsd:double ;
+					spod:sourceEnabled true ;
+					spod:sinkEnabled true ;
+					spod:sinkSymbol "early_damp"
+				] [
+					a midi:Controller ;
+					spod:sinkModule <urn:uuid:80eddcf7-8916-4fb5-8859-27c8231f388d> ;
+					midi:channel "3"^^xsd:int ;
+					midi:controllerNumber "-35"^^xsd:int ;
+					spod:sourceMinimum "0.0"^^xsd:double ;
+					spod:sourceMaximum "127.0"^^xsd:double ;
+					spod:sinkMinimum "1000.0"^^xsd:double ;
+					spod:sinkMaximum "16000.0"^^xsd:double ;
+					spod:sourceEnabled true ;
+					spod:sinkEnabled true ;
+					spod:sinkSymbol "late_damp"
+				] [
+					a midi:Controller ;
+					spod:sinkModule <urn:uuid:80eddcf7-8916-4fb5-8859-27c8231f388d> ;
+					midi:channel "3"^^xsd:int ;
+					midi:controllerNumber "-38"^^xsd:int ;
+					spod:sourceMinimum "0.0"^^xsd:double ;
+					spod:sourceMaximum "191.0"^^xsd:double ;
+					spod:sinkMinimum "50.0"^^xsd:double ;
+					spod:sinkMaximum "1050.0"^^xsd:double ;
+					spod:sourceEnabled true ;
+					spod:sinkEnabled true ;
+					spod:sinkSymbol "boost_freq"
+				] [
+					a midi:Controller ;
+					spod:sinkModule <urn:uuid:80eddcf7-8916-4fb5-8859-27c8231f388d> ;
+					midi:channel "3"^^xsd:int ;
+					midi:controllerNumber "27"^^xsd:int ;
+					spod:sourceMinimum "0.0"^^xsd:double ;
+					spod:sourceMaximum "127.0"^^xsd:double ;
+					spod:sinkMinimum "0.0"^^xsd:double ;
+					spod:sinkMaximum "100.0"^^xsd:double ;
+					spod:sourceEnabled true ;
+					spod:sinkEnabled true ;
+					spod:sinkSymbol "low_boost"
+				] [
+					a midi:Controller ;
+					spod:sinkModule <urn:uuid:80eddcf7-8916-4fb5-8859-27c8231f388d> ;
+					midi:channel "3"^^xsd:int ;
+					midi:controllerNumber "30"^^xsd:int ;
+					spod:sourceMinimum "0.0"^^xsd:double ;
+					spod:sourceMaximum "127.0"^^xsd:double ;
+					spod:sinkMinimum "0.0"^^xsd:double ;
+					spod:sinkMaximum "100.0"^^xsd:double ;
+					spod:sourceEnabled true ;
+					spod:sinkEnabled true ;
+					spod:sinkSymbol "diffuse"
+				] [
+					a midi:Controller ;
+					spod:sinkModule <urn:uuid:80eddcf7-8916-4fb5-8859-27c8231f388d> ;
+					midi:channel "3"^^xsd:int ;
+					midi:controllerNumber "31"^^xsd:int ;
+					spod:sourceMinimum "0.0"^^xsd:double ;
+					spod:sourceMaximum "127.0"^^xsd:double ;
+					spod:sinkMinimum "0.0"^^xsd:double ;
+					spod:sinkMaximum "100.0"^^xsd:double ;
+					spod:sourceEnabled true ;
+					spod:sinkEnabled true ;
+					spod:sinkSymbol "wander"
+				] [
+					a midi:Controller ;
+					spod:sinkModule <urn:uuid:cc07edd3-954e-46b2-a396-553c9d0c0650> ;
+					midi:channel "3"^^xsd:int ;
+					midi:controllerNumber "32"^^xsd:int ;
+					spod:sourceMinimum "0.0"^^xsd:double ;
+					spod:sourceMaximum "127.0"^^xsd:double ;
+					spod:sinkMinimum "0.0"^^xsd:double ;
+					spod:sinkMaximum "1.0"^^xsd:double ;
+					spod:sourceEnabled true ;
+					spod:sinkEnabled true ;
+					spod:sinkSymbol "mix"
+				] [
+					a midi:Controller ;
+					spod:sinkModule <urn:uuid:cc07edd3-954e-46b2-a396-553c9d0c0650> ;
+					midi:channel "3"^^xsd:int ;
+					midi:controllerNumber "33"^^xsd:int ;
+					spod:sourceMinimum "0.0"^^xsd:double ;
+					spod:sourceMaximum "127.0"^^xsd:double ;
+					spod:sinkMinimum "0.015625"^^xsd:double ;
+					spod:sinkMaximum "64.0"^^xsd:double ;
+					spod:sourceEnabled true ;
+					spod:sinkEnabled true ;
+					spod:sinkSymbol "sc_level"
+				] [
+					a midi:Controller ;
+					spod:sinkModule <urn:uuid:cc07edd3-954e-46b2-a396-553c9d0c0650> ;
+					midi:channel "3"^^xsd:int ;
+					midi:controllerNumber "34"^^xsd:int ;
+					spod:sourceMinimum "0.0"^^xsd:double ;
+					spod:sourceMaximum "127.0"^^xsd:double ;
+					spod:sinkMinimum "0.0099999997764826"^^xsd:double ;
+					spod:sinkMaximum "2000.0"^^xsd:double ;
+					spod:sourceEnabled true ;
+					spod:sinkEnabled true ;
+					spod:sinkSymbol "attack"
+				] [
+					a midi:Controller ;
+					spod:sinkModule <urn:uuid:cc07edd3-954e-46b2-a396-553c9d0c0650> ;
+					midi:channel "3"^^xsd:int ;
+					midi:controllerNumber "35"^^xsd:int ;
+					spod:sourceMinimum "0.0"^^xsd:double ;
+					spod:sourceMaximum "127.0"^^xsd:double ;
+					spod:sinkMinimum "0.0099999997764826"^^xsd:double ;
+					spod:sinkMaximum "2000.0"^^xsd:double ;
+					spod:sourceEnabled true ;
+					spod:sinkEnabled true ;
+					spod:sinkSymbol "release"
+				] [
+					a midi:Controller ;
+					spod:sinkModule <urn:uuid:cc07edd3-954e-46b2-a396-553c9d0c0650> ;
+					midi:channel "3"^^xsd:int ;
+					midi:controllerNumber "36"^^xsd:int ;
+					spod:sourceMinimum "0.0"^^xsd:double ;
+					spod:sourceMaximum "127.0"^^xsd:double ;
+					spod:sinkMinimum "0.0009765629656613"^^xsd:double ;
+					spod:sinkMaximum "1.0"^^xsd:double ;
+					spod:sourceEnabled true ;
+					spod:sinkEnabled true ;
+					spod:sinkSymbol "threshold"
+				] [
+					a midi:Controller ;
+					spod:sinkModule <urn:uuid:cc07edd3-954e-46b2-a396-553c9d0c0650> ;
+					midi:channel "3"^^xsd:int ;
+					midi:controllerNumber "37"^^xsd:int ;
+					spod:sourceMinimum "0.0"^^xsd:double ;
+					spod:sourceMaximum "127.0"^^xsd:double ;
+					spod:sinkMinimum "1.0"^^xsd:double ;
+					spod:sinkMaximum "20.0"^^xsd:double ;
+					spod:sourceEnabled true ;
+					spod:sinkEnabled true ;
+					spod:sinkSymbol "ratio"
+				] [
+					a midi:Controller ;
+					spod:sinkModule <urn:uuid:cc07edd3-954e-46b2-a396-553c9d0c0650> ;
+					midi:channel "3"^^xsd:int ;
+					midi:controllerNumber "38"^^xsd:int ;
+					spod:sourceMinimum "0.0"^^xsd:double ;
+					spod:sourceMaximum "127.0"^^xsd:double ;
+					spod:sinkMinimum "1.0"^^xsd:double ;
+					spod:sinkMaximum "8.0"^^xsd:double ;
+					spod:sourceEnabled true ;
+					spod:sinkEnabled true ;
+					spod:sinkSymbol "knee"
+				] [
+					a midi:Controller ;
+					spod:sinkModule <urn:uuid:cc07edd3-954e-46b2-a396-553c9d0c0650> ;
+					midi:channel "3"^^xsd:int ;
+					midi:controllerNumber "39"^^xsd:int ;
+					spod:sourceMinimum "0.0"^^xsd:double ;
+					spod:sourceMaximum "127.0"^^xsd:double ;
+					spod:sinkMinimum "1.0"^^xsd:double ;
+					spod:sinkMaximum "64.0"^^xsd:double ;
+					spod:sourceEnabled true ;
+					spod:sinkEnabled true ;
+					spod:sinkSymbol "makeup"
+				]
+			)
+		] ;
+		spod:graphPositionX "-275.0"^^xsd:float ;
+		spod:graphPositionY "0.0"^^xsd:float ;
+		spod:columnEnabled false ;
+		spod:rowEnabled false
+	] .
+
