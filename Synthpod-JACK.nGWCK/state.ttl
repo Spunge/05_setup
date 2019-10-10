@@ -17,7 +17,7 @@
 	rdfs:label "/home/johan/NSM Sessions/05_setup/Synthpod-JACK.nGWCK" ;
 	state:state [
 		lv2:minorVersion "1"^^xsd:int ;
-		lv2:microVersion "6131"^^xsd:int ;
+		lv2:microVersion "6137"^^xsd:int ;
 		spod:moduleList [
 			<urn:uuid:d977c817-5514-4adb-b282-98b14fb4948f> [
 				a spod:source ;
@@ -37,7 +37,8 @@
 			<urn:uuid:80eddcf7-8916-4fb5-8859-27c8231f388d> [
 				a <urn:dragonfly:room> ;
 				spod:modulePositionX "653.0"^^xsd:float ;
-				spod:modulePositionY "279.0"^^xsd:float
+				spod:modulePositionY "279.0"^^xsd:float ;
+				ui:ui <urn:dragonfly:room#UI>
 			] ;
 			<urn:uuid:416360c5-6738-4df8-b083-de9a3550b80f> [
 				a spod:sink ;

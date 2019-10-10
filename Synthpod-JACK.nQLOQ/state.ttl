@@ -17,7 +17,7 @@
 	rdfs:label "/home/johan/NSM Sessions/05_setup/Synthpod-JACK.nQLOQ" ;
 	state:state [
 		lv2:minorVersion "1"^^xsd:int ;
-		lv2:microVersion "6131"^^xsd:int ;
+		lv2:microVersion "6137"^^xsd:int ;
 		spod:moduleList [
 			<urn:uuid:d977c817-5514-4adb-b282-98b14fb4948f> [
 				a spod:source ;

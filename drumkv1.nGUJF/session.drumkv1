@@ -2,7 +2,7 @@
 <preset name="session" version="0.9.10">
  <elements>
   <element index="36">
-   <sample index="0" offset-end="45232" offset-start="0" name="GEN1_SAMPLE">01L4-89c385e1.UFHHM   [s].wav</sample>
+   <sample offset-end="45232" index="0" name="GEN1_SAMPLE" offset-start="0">01L4-89c385e1.UFHHM   [s].wav</sample>
    <params>
     <param index="0" name="GEN1_SAMPLE">36</param>
     <param index="1" name="GEN1_REVERSE">0</param>
@@ -51,7 +51,7 @@
    </params>
   </element>
   <element index="37">
-   <sample index="0" offset-end="194172" offset-start="0" name="GEN1_SAMPLE">01OP-aa0d745a.UFHHM   [s].wav</sample>
+   <sample offset-end="194172" index="0" name="GEN1_SAMPLE" offset-start="0">01OP-aa0d745a.UFHHM   [s].wav</sample>
    <params>
     <param index="0" name="GEN1_SAMPLE">37</param>
     <param index="1" name="GEN1_REVERSE">0</param>
@@ -100,7 +100,7 @@
    </params>
   </element>
   <element index="38">
-   <sample index="0" offset-end="28490" offset-start="0" name="GEN1_SAMPLE">01PD-a6a8ee6d.UFHHM   [s].wav</sample>
+   <sample offset-end="28490" index="0" name="GEN1_SAMPLE" offset-start="0">01PD-a6a8ee6d.UFHHM   [s].wav</sample>
    <params>
     <param index="0" name="GEN1_SAMPLE">38</param>
     <param index="1" name="GEN1_REVERSE">0</param>
@@ -110,7 +110,7 @@
     <param index="5" name="GEN1_GROUP">0</param>
     <param index="6" name="GEN1_COARSE">0</param>
     <param index="7" name="GEN1_FINE">0</param>
-    <param index="8" name="GEN1_ENVTIME">0.2</param>
+    <param index="8" name="GEN1_ENVTIME">0.08</param>
     <param index="9" name="DCF1_ENABLED">1</param>
     <param index="10" name="DCF1_CUTOFF">1</param>
     <param index="11" name="DCF1_RESO">0</param>
@@ -149,7 +149,7 @@
    </params>
   </element>
   <element index="39">
-   <sample index="0" offset-end="309049" offset-start="0" name="GEN1_SAMPLE">01PS-609cf07c.UFHHM   [s].wav</sample>
+   <sample offset-end="309049" index="0" name="GEN1_SAMPLE" offset-start="0">01PS-609cf07c.UFHHM   [s].wav</sample>
    <params>
     <param index="0" name="GEN1_SAMPLE">39</param>
     <param index="1" name="GEN1_REVERSE">0</param>

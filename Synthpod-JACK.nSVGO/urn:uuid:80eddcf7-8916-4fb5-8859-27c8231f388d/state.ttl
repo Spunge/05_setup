@@ -15,7 +15,7 @@
 		pset:value 333.46456909
 	] , [
 		lv2:symbol "decay" ;
-		pset:value 2.59448814
+		pset:value 0.1
 	] , [
 		lv2:symbol "diffuse" ;
 		pset:value 54.33070755
@@ -27,7 +27,7 @@
 		pset:value 6078.74023438
 	] , [
 		lv2:symbol "early_level" ;
-		pset:value 1.57480311
+		pset:value 0.0
 	] , [
 		lv2:symbol "early_send" ;
 		pset:value 0.0
