@@ -16,9 +16,11 @@ Non-Mixer.nSOHG (percussion):Port4/out-1 |> Non-Mixer.nSOHG (bus):percussion/in-
 Non-Mixer.nSOHG (percussion):Port4/out-2 |> Non-Mixer.nSOHG (bus):percussion/in-2
 Non-Mixer.nSOHG (percussion):port0/out-1 |> Non-Mixer.nSOHG (bus):percussion/in-1
 Non-Mixer.nSOHG (percussion):port0/out-1 |> Synthpod-JACK.nJAJT:#88644_audio_sink_1
+Non-Mixer.nSOHG (percussion):port0/out-1 |> Synthpod-JACK.nQWRM:#88644_audio_sink_1
 Non-Mixer.nSOHG (percussion):port0/out-1 |> Synthpod-JACK.nRIEG:#88644_audio_sink_1
 Non-Mixer.nSOHG (percussion):port0/out-2 |> Non-Mixer.nSOHG (bus):percussion/in-2
 Non-Mixer.nSOHG (percussion):port0/out-2 |> Synthpod-JACK.nJAJT:#88644_audio_sink_2
+Non-Mixer.nSOHG (percussion):port0/out-2 |> Synthpod-JACK.nQWRM:#88644_audio_sink_2
 Non-Mixer.nSOHG (percussion):port0/out-2 |> Synthpod-JACK.nRIEG:#88644_audio_sink_2
 Non-Mixer.nSOHG (percussion):port1/out-1 |> Non-Mixer.nSOHG (bus):percussion/in-1
 Non-Mixer.nSOHG (percussion):port1/out-2 |> Non-Mixer.nSOHG (bus):percussion/in-2
@@ -33,11 +35,13 @@ Octothorpe:control_out                   |> Synthpod-JACK.nGWCK:#88644_event_sin
 Octothorpe:control_out                   |> Synthpod-JACK.nJAJT:#88644_event_sink
 Octothorpe:control_out                   |> Synthpod-JACK.nKPMC:#88644_event_sink
 Octothorpe:control_out                   |> Synthpod-JACK.nQLOQ:#88644_event_sink
+Octothorpe:control_out                   |> Synthpod-JACK.nQWRM:#88644_event_sink
 Octothorpe:control_out                   |> Synthpod-JACK.nRIEG:#88644_event_sink
 Octothorpe:control_out                   |> Synthpod-JACK.nRNFD:#88644_event_sink
 Octothorpe:control_out                   |> Synthpod-JACK.nSVGO:#88644_event_sink
 Octothorpe:control_out                   |> Synthpod-JACK.nXXNB:#98647_event_sink
 Octothorpe:sequence_out                  |> Synthpod-JACK.nJAJT:#23048_midi_sink
+Octothorpe:sequence_out                  |> Synthpod-JACK.nQWRM:#23048_midi_sink
 Octothorpe:sequence_out                  |> Synthpod-JACK.nRIEG:#23048_midi_sink
 Octothorpe:sequence_out                  |> drumkv1.nGUJF:in
 Octothorpe:sequence_out                  |> drumkv1.nKAMY:in
@@ -56,6 +60,9 @@ Synthpod-JACK.nKPMC:#86729_event_source  |> Octothorpe:control_in
 Synthpod-JACK.nQLOQ:#86729_audio_source_1 |> Non-Mixer.nSOHG (percussion):port2/in-1
 Synthpod-JACK.nQLOQ:#86729_audio_source_2 |> Non-Mixer.nSOHG (percussion):port2/in-2
 Synthpod-JACK.nQLOQ:#86729_event_source  |> Octothorpe:control_in
+Synthpod-JACK.nQWRM:#86729_audio_source_1 |> Non-Mixer.nSOHG (drone):port7/in-1
+Synthpod-JACK.nQWRM:#86729_audio_source_2 |> Non-Mixer.nSOHG (drone):port7/in-2
+Synthpod-JACK.nQWRM:#86729_event_source  |> Octothorpe:control_in
 Synthpod-JACK.nRIEG:#86729_audio_source_1 |> Non-Mixer.nSOHG (drone):port5/in-1
 Synthpod-JACK.nRIEG:#86729_audio_source_2 |> Non-Mixer.nSOHG (drone):port5/in-2
 Synthpod-JACK.nRIEG:#86729_event_source  |> Octothorpe:control_in

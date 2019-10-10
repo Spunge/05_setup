@@ -15,7 +15,7 @@
 		pset:value false
 	] , [
 		lv2:symbol "freq" ;
-		pset:value 10.0
+		pset:value 324.80316162
 	] , [
 		lv2:symbol "inertia" ;
 		pset:value 20.0
