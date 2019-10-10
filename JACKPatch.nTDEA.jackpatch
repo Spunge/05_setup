@@ -54,7 +54,9 @@ Synthpod-JACK.nRNFD:#86729_audio_source_1 |> Non-Mixer.nSOHG (percussion):port1/
 Synthpod-JACK.nRNFD:#86729_audio_source_2 |> Non-Mixer.nSOHG (percussion):port1/in-2
 Synthpod-JACK.nRNFD:#86729_event_source  |> Octothorpe:control_in
 Synthpod-JACK.nSVGO:#86729_audio_source_1 |> Non-Mixer.nSOHG (percussion):port0/in-1
+Synthpod-JACK.nSVGO:#86729_audio_source_1 |> Synthpod-JACK.nRIEG:#88644_audio_sink_1
 Synthpod-JACK.nSVGO:#86729_audio_source_2 |> Non-Mixer.nSOHG (percussion):port0/in-2
+Synthpod-JACK.nSVGO:#86729_audio_source_2 |> Synthpod-JACK.nRIEG:#88644_audio_sink_2
 Synthpod-JACK.nSVGO:#86729_event_source  |> Octothorpe:control_in
 Synthpod-JACK.nXXNB:#27045_event_source  |> Non-MIDI-Mapper.nTQXY:midi-in
 drumkv1.nGUJF:out_1                      |> Synthpod-JACK.nKPMC:#88644_audio_sink_1

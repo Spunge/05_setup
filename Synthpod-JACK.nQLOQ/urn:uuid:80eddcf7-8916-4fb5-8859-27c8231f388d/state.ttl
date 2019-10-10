@@ -57,7 +57,7 @@
 		pset:value 0.40000001
 	] , [
 		lv2:symbol "wander" ;
-		pset:value 97.63779449
+		pset:value 74.01574707
 	] , [
 		lv2:symbol "width" ;
 		pset:value 66.53543091

@@ -18,7 +18,7 @@
 		pset:value 5.0
 	] , [
 		lv2:symbol "HSfreq" ;
-		pset:value 3716.53540039
+		pset:value 4661.41748047
 	] , [
 		lv2:symbol "HSgain" ;
 		pset:value -14.59842491
@@ -36,7 +36,7 @@
 		pset:value 0.99727833
 	] , [
 		lv2:symbol "LPfreq" ;
-		pset:value 20000.0
+		pset:value 2188.97631836
 	] , [
 		lv2:symbol "LSfreq" ;
 		pset:value 25.0

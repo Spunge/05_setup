@@ -47,8 +47,14 @@
 			] ;
 			<urn:uuid:80eddcf7-8916-4fb5-8859-27c8231f388d> [
 				a <urn:dragonfly:room> ;
-				spod:modulePositionX "653.0"^^xsd:float ;
-				spod:modulePositionY "279.0"^^xsd:float
+				spod:modulePositionX "463.0"^^xsd:float ;
+				spod:modulePositionY "280.0"^^xsd:float
+			] ;
+			<urn:uuid:cc07edd3-954e-46b2-a396-553c9d0c0650> [
+				a <http://calf.sourceforge.net/plugins/SidechainCompressor> ;
+				spod:modulePositionX "689.0"^^xsd:float ;
+				spod:modulePositionY "286.0"^^xsd:float ;
+				ui:ui <http://calf.sourceforge.net/plugins/gui/gtk2-gui>
 			] ;
 			<urn:uuid:416360c5-6738-4df8-b083-de9a3550b80f> [
 				a spod:sink ;
@@ -109,6 +115,36 @@
 					param:gain "1.0"^^xsd:float
 				] [
 					spod:sourceModule <urn:uuid:80eddcf7-8916-4fb5-8859-27c8231f388d> ;
+					spod:sourceSymbol "lv2_audio_out_1" ;
+					spod:sinkModule <urn:uuid:cc07edd3-954e-46b2-a396-553c9d0c0650> ;
+					spod:sinkSymbol "in_l" ;
+					param:gain "1.0"^^xsd:float
+				] [
+					spod:sourceModule <urn:uuid:80eddcf7-8916-4fb5-8859-27c8231f388d> ;
+					spod:sourceSymbol "lv2_audio_out_2" ;
+					spod:sinkModule <urn:uuid:cc07edd3-954e-46b2-a396-553c9d0c0650> ;
+					spod:sinkSymbol "in_r" ;
+					param:gain "1.0"^^xsd:float
+				] [
+					spod:sourceModule <urn:uuid:d977c817-5514-4adb-b282-98b14fb4948f> ;
+					spod:sourceSymbol "audio_source_1" ;
+					spod:sinkModule <urn:uuid:cc07edd3-954e-46b2-a396-553c9d0c0650> ;
+					spod:sinkSymbol "sidechain" ;
+					param:gain "1.0"^^xsd:float
+				] [
+					spod:sourceModule <urn:uuid:d977c817-5514-4adb-b282-98b14fb4948f> ;
+					spod:sourceSymbol "audio_source_2" ;
+					spod:sinkModule <urn:uuid:cc07edd3-954e-46b2-a396-553c9d0c0650> ;
+					spod:sinkSymbol "sidechain2" ;
+					param:gain "1.0"^^xsd:float
+				] [
+					spod:sourceModule <urn:uuid:d977c817-5514-4adb-b282-98b14fb4948f> ;
+					spod:sourceSymbol "event_source" ;
+					spod:sinkModule <urn:uuid:cc07edd3-954e-46b2-a396-553c9d0c0650> ;
+					spod:sinkSymbol "__automation__in__" ;
+					param:gain "1.0"^^xsd:float
+				] [
+					spod:sourceModule <urn:uuid:80eddcf7-8916-4fb5-8859-27c8231f388d> ;
 					spod:sourceSymbol "__automation__out__" ;
 					spod:sinkModule <urn:uuid:416360c5-6738-4df8-b083-de9a3550b80f> ;
 					spod:sinkSymbol "event_sink" ;
@@ -120,14 +156,20 @@
 					spod:sinkSymbol "event_sink" ;
 					param:gain "1.0"^^xsd:float
 				] [
-					spod:sourceModule <urn:uuid:80eddcf7-8916-4fb5-8859-27c8231f388d> ;
-					spod:sourceSymbol "lv2_audio_out_1" ;
+					spod:sourceModule <urn:uuid:cc07edd3-954e-46b2-a396-553c9d0c0650> ;
+					spod:sourceSymbol "__automation__out__" ;
+					spod:sinkModule <urn:uuid:416360c5-6738-4df8-b083-de9a3550b80f> ;
+					spod:sinkSymbol "event_sink" ;
+					param:gain "1.0"^^xsd:float
+				] [
+					spod:sourceModule <urn:uuid:cc07edd3-954e-46b2-a396-553c9d0c0650> ;
+					spod:sourceSymbol "out_l" ;
 					spod:sinkModule <urn:uuid:416360c5-6738-4df8-b083-de9a3550b80f> ;
 					spod:sinkSymbol "audio_sink_1" ;
 					param:gain "1.0"^^xsd:float
 				] [
-					spod:sourceModule <urn:uuid:80eddcf7-8916-4fb5-8859-27c8231f388d> ;
-					spod:sourceSymbol "lv2_audio_out_2" ;
+					spod:sourceModule <urn:uuid:cc07edd3-954e-46b2-a396-553c9d0c0650> ;
+					spod:sourceSymbol "out_r" ;
 					spod:sinkModule <urn:uuid:416360c5-6738-4df8-b083-de9a3550b80f> ;
 					spod:sinkSymbol "audio_sink_2" ;
 					param:gain "1.0"^^xsd:float
@@ -140,8 +182,8 @@
 				[
 					spod:sourceModule <urn:uuid:40307d79-a8d6-4290-8466-d9944991fc5e> ;
 					spod:sinkModule <urn:uuid:bcec3231-18f1-48d9-9704-b81f39c3dcbc> ;
-					spod:nodePositionX "0.0"^^xsd:float ;
-					spod:nodePositionY "0.0"^^xsd:float
+					spod:nodePositionX "-91.5"^^xsd:float ;
+					spod:nodePositionY "282.0"^^xsd:float
 				] [
 					spod:sourceModule <urn:uuid:2ad84cd6-a885-41e4-a61c-de524cc2d370> ;
 					spod:sinkModule <urn:uuid:40307d79-a8d6-4290-8466-d9944991fc5e> ;
@@ -150,33 +192,48 @@
 				] [
 					spod:sourceModule <urn:uuid:d977c817-5514-4adb-b282-98b14fb4948f> ;
 					spod:sinkModule <urn:uuid:1d96a3b2-769b-4ad8-ac72-89713fcaf870> ;
-					spod:nodePositionX "0.0"^^xsd:float ;
-					spod:nodePositionY "0.0"^^xsd:float
+					spod:nodePositionX "126.0"^^xsd:float ;
+					spod:nodePositionY "233.0"^^xsd:float
 				] [
 					spod:sourceModule <urn:uuid:bcec3231-18f1-48d9-9704-b81f39c3dcbc> ;
 					spod:sinkModule <urn:uuid:1d96a3b2-769b-4ad8-ac72-89713fcaf870> ;
-					spod:nodePositionX "0.0"^^xsd:float ;
-					spod:nodePositionY "0.0"^^xsd:float
+					spod:nodePositionX "119.0"^^xsd:float ;
+					spod:nodePositionY "301.5"^^xsd:float
 				] [
 					spod:sourceModule <urn:uuid:d977c817-5514-4adb-b282-98b14fb4948f> ;
 					spod:sinkModule <urn:uuid:80eddcf7-8916-4fb5-8859-27c8231f388d> ;
-					spod:nodePositionX "536.0"^^xsd:float ;
-					spod:nodePositionY "204.5"^^xsd:float
+					spod:nodePositionX "358.0"^^xsd:float ;
+					spod:nodePositionY "244.5"^^xsd:float
 				] [
 					spod:sourceModule <urn:uuid:1d96a3b2-769b-4ad8-ac72-89713fcaf870> ;
 					spod:sinkModule <urn:uuid:80eddcf7-8916-4fb5-8859-27c8231f388d> ;
-					spod:nodePositionX "0.0"^^xsd:float ;
-					spod:nodePositionY "0.0"^^xsd:float
+					spod:nodePositionX "343.5"^^xsd:float ;
+					spod:nodePositionY "333.5"^^xsd:float
+				] [
+					spod:sourceModule <urn:uuid:d977c817-5514-4adb-b282-98b14fb4948f> ;
+					spod:sinkModule <urn:uuid:cc07edd3-954e-46b2-a396-553c9d0c0650> ;
+					spod:nodePositionX "571.0"^^xsd:float ;
+					spod:nodePositionY "226.0"^^xsd:float
+				] [
+					spod:sourceModule <urn:uuid:80eddcf7-8916-4fb5-8859-27c8231f388d> ;
+					spod:sinkModule <urn:uuid:cc07edd3-954e-46b2-a396-553c9d0c0650> ;
+					spod:nodePositionX "571.0"^^xsd:float ;
+					spod:nodePositionY "363.0"^^xsd:float
 				] [
 					spod:sourceModule <urn:uuid:1d96a3b2-769b-4ad8-ac72-89713fcaf870> ;
 					spod:sinkModule <urn:uuid:416360c5-6738-4df8-b083-de9a3550b80f> ;
-					spod:nodePositionX "494.5"^^xsd:float ;
-					spod:nodePositionY "211.5"^^xsd:float
+					spod:nodePositionX "772.5"^^xsd:float ;
+					spod:nodePositionY "136.0"^^xsd:float
 				] [
 					spod:sourceModule <urn:uuid:80eddcf7-8916-4fb5-8859-27c8231f388d> ;
 					spod:sinkModule <urn:uuid:416360c5-6738-4df8-b083-de9a3550b80f> ;
 					spod:nodePositionX "0.0"^^xsd:float ;
 					spod:nodePositionY "0.0"^^xsd:float
+				] [
+					spod:sourceModule <urn:uuid:cc07edd3-954e-46b2-a396-553c9d0c0650> ;
+					spod:sinkModule <urn:uuid:416360c5-6738-4df8-b083-de9a3550b80f> ;
+					spod:nodePositionX "814.5"^^xsd:float ;
+					spod:nodePositionY "318.0"^^xsd:float
 				]
 			)
 		] ;
@@ -471,6 +528,18 @@
 					spod:sourceEnabled true ;
 					spod:sinkEnabled true ;
 					spod:sinkSymbol "wander"
+				] [
+					a midi:Controller ;
+					spod:sinkModule <urn:uuid:cc07edd3-954e-46b2-a396-553c9d0c0650> ;
+					midi:channel "2"^^xsd:int ;
+					midi:controllerNumber "96"^^xsd:int ;
+					spod:sourceMinimum "0.0"^^xsd:double ;
+					spod:sourceMaximum "127.0"^^xsd:double ;
+					spod:sinkMinimum "0.0"^^xsd:double ;
+					spod:sinkMaximum "1.0"^^xsd:double ;
+					spod:sourceEnabled true ;
+					spod:sinkEnabled true ;
+					spod:sinkSymbol "mix"
 				]
 			)
 		] ;
