@@ -34,6 +34,7 @@ Octothorpe:apc_out                       |> system:midi_playback_3
 Octothorpe:control_out                   |> Synthpod-JACK.nGWCK:#88644_event_sink
 Octothorpe:control_out                   |> Synthpod-JACK.nJAJT:#88644_event_sink
 Octothorpe:control_out                   |> Synthpod-JACK.nKPMC:#88644_event_sink
+Octothorpe:control_out                   |> Synthpod-JACK.nMSLI:#5697_event_sink
 Octothorpe:control_out                   |> Synthpod-JACK.nQLOQ:#88644_event_sink
 Octothorpe:control_out                   |> Synthpod-JACK.nQWRM:#88644_event_sink
 Octothorpe:control_out                   |> Synthpod-JACK.nRIEG:#88644_event_sink
@@ -59,6 +60,7 @@ Synthpod-JACK.nKPMC:#86729_audio_source_2 |> Non-Mixer.nSOHG (percussion):Port4/
 Synthpod-JACK.nKPMC:#86729_event_source  |> Octothorpe:control_in
 Synthpod-JACK.nMSLI:#47646_audio_source_1 |> Non-Mixer.nSOHG (bus):percussion/in-1
 Synthpod-JACK.nMSLI:#47646_audio_source_2 |> Non-Mixer.nSOHG (bus):percussion/in-2
+Synthpod-JACK.nMSLI:#47646_event_source  |> Octothorpe:control_in
 Synthpod-JACK.nQLOQ:#86729_audio_source_1 |> Non-Mixer.nSOHG (percussion):port2/in-1
 Synthpod-JACK.nQLOQ:#86729_audio_source_2 |> Non-Mixer.nSOHG (percussion):port2/in-2
 Synthpod-JACK.nQLOQ:#86729_event_source  |> Octothorpe:control_in

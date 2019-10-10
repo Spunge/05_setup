@@ -15,6 +15,6 @@
 		pset:value true
 	] , [
 		lv2:symbol "frequency_control" ;
-		pset:value 0.49606299
+		pset:value 0.07874016
 	] .
 

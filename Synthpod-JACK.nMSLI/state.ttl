@@ -27,13 +27,17 @@
 			<urn:uuid:ab95b8b5-d626-492e-ba25-d49fd9325ee8> [
 				a <http://gareus.org/oss/lv2/dpl#stereo> ;
 				spod:modulePositionX "670.0"^^xsd:float ;
-				spod:modulePositionY "96.0"^^xsd:float ;
-				ui:ui <http://gareus.org/oss/lv2/dpl#ui_gl>
+				spod:modulePositionY "96.0"^^xsd:float
+			] ;
+			<urn:uuid:3099c1b5-cb11-4661-affd-5880378c7671> [
+				a <http://invadarecords.com/plugins/lv2/filter/hpf/stereo> ;
+				spod:modulePositionX "990.0"^^xsd:float ;
+				spod:modulePositionY "171.0"^^xsd:float
 			] ;
 			<urn:uuid:0f5d2255-81b1-469b-8ebb-b3b9b5b43ef0> [
 				a spod:sink ;
-				spod:modulePositionX "942.0"^^xsd:float ;
-				spod:modulePositionY "92.0"^^xsd:float
+				spod:modulePositionX "1262.0"^^xsd:float ;
+				spod:modulePositionY "82.0"^^xsd:float
 			]
 		] ;
 		spod:connectionList [
@@ -54,11 +58,35 @@
 				] [
 					spod:sourceModule <urn:uuid:ab95b8b5-d626-492e-ba25-d49fd9325ee8> ;
 					spod:sourceSymbol "outL" ;
+					spod:sinkModule <urn:uuid:3099c1b5-cb11-4661-affd-5880378c7671> ;
+					spod:sinkSymbol "inL" ;
+					param:gain "1.0"^^xsd:float
+				] [
+					spod:sourceModule <urn:uuid:ab95b8b5-d626-492e-ba25-d49fd9325ee8> ;
+					spod:sourceSymbol "outR" ;
+					spod:sinkModule <urn:uuid:3099c1b5-cb11-4661-affd-5880378c7671> ;
+					spod:sinkSymbol "inR" ;
+					param:gain "1.0"^^xsd:float
+				] [
+					spod:sourceModule <urn:uuid:3bf756c8-0a41-4e84-9753-eca625b35dbe> ;
+					spod:sourceSymbol "event_source" ;
+					spod:sinkModule <urn:uuid:3099c1b5-cb11-4661-affd-5880378c7671> ;
+					spod:sinkSymbol "__automation__in__" ;
+					param:gain "1.0"^^xsd:float
+				] [
+					spod:sourceModule <urn:uuid:3099c1b5-cb11-4661-affd-5880378c7671> ;
+					spod:sourceSymbol "__automation__out__" ;
+					spod:sinkModule <urn:uuid:0f5d2255-81b1-469b-8ebb-b3b9b5b43ef0> ;
+					spod:sinkSymbol "event_sink" ;
+					param:gain "1.0"^^xsd:float
+				] [
+					spod:sourceModule <urn:uuid:3099c1b5-cb11-4661-affd-5880378c7671> ;
+					spod:sourceSymbol "outL" ;
 					spod:sinkModule <urn:uuid:0f5d2255-81b1-469b-8ebb-b3b9b5b43ef0> ;
 					spod:sinkSymbol "audio_sink_1" ;
 					param:gain "1.0"^^xsd:float
 				] [
-					spod:sourceModule <urn:uuid:ab95b8b5-d626-492e-ba25-d49fd9325ee8> ;
+					spod:sourceModule <urn:uuid:3099c1b5-cb11-4661-affd-5880378c7671> ;
 					spod:sourceSymbol "outR" ;
 					spod:sinkModule <urn:uuid:0f5d2255-81b1-469b-8ebb-b3b9b5b43ef0> ;
 					spod:sinkSymbol "audio_sink_2" ;
@@ -75,7 +103,17 @@
 					spod:nodePositionX "0.0"^^xsd:float ;
 					spod:nodePositionY "0.0"^^xsd:float
 				] [
+					spod:sourceModule <urn:uuid:3bf756c8-0a41-4e84-9753-eca625b35dbe> ;
+					spod:sinkModule <urn:uuid:3099c1b5-cb11-4661-affd-5880378c7671> ;
+					spod:nodePositionX "848.0"^^xsd:float ;
+					spod:nodePositionY "120.0"^^xsd:float
+				] [
 					spod:sourceModule <urn:uuid:ab95b8b5-d626-492e-ba25-d49fd9325ee8> ;
+					spod:sinkModule <urn:uuid:3099c1b5-cb11-4661-affd-5880378c7671> ;
+					spod:nodePositionX "0.0"^^xsd:float ;
+					spod:nodePositionY "0.0"^^xsd:float
+				] [
+					spod:sourceModule <urn:uuid:3099c1b5-cb11-4661-affd-5880378c7671> ;
 					spod:sinkModule <urn:uuid:0f5d2255-81b1-469b-8ebb-b3b9b5b43ef0> ;
 					spod:nodePositionX "0.0"^^xsd:float ;
 					spod:nodePositionY "0.0"^^xsd:float
@@ -84,10 +122,24 @@
 		] ;
 		spod:automationList [
 			a atom:Tuple ;
-			rdf:value ()
+			rdf:value (
+				[
+					a midi:Controller ;
+					spod:sinkModule <urn:uuid:3099c1b5-cb11-4661-affd-5880378c7671> ;
+					midi:channel "8"^^xsd:int ;
+					midi:controllerNumber "16"^^xsd:int ;
+					spod:sourceMinimum "0.0"^^xsd:double ;
+					spod:sourceMaximum "127.0"^^xsd:double ;
+					spod:sinkMinimum "20.0"^^xsd:double ;
+					spod:sinkMaximum "20000.0"^^xsd:double ;
+					spod:sourceEnabled true ;
+					spod:sinkEnabled true ;
+					spod:sinkSymbol "freq"
+				]
+			)
 		] ;
-		spod:graphPositionX "0.0"^^xsd:float ;
-		spod:graphPositionY "0.0"^^xsd:float ;
+		spod:graphPositionX "-151.0"^^xsd:float ;
+		spod:graphPositionY "-222.0"^^xsd:float ;
 		spod:columnEnabled true ;
 		spod:rowEnabled true
 	] .

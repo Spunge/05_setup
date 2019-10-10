@@ -8,13 +8,19 @@
 
 <>
 	a pset:Preset ;
-	lv2:appliesTo <http://www.openavproductions.com/artyfx#filta> ;
+	lv2:appliesTo <http://invadarecords.com/plugins/lv2/filter/hpf/stereo> ;
 	rdfs:label "state" ;
 	lv2:port [
-		lv2:symbol "active" ;
-		pset:value true
+		lv2:symbol "bypass" ;
+		pset:value false
 	] , [
-		lv2:symbol "frequency_control" ;
-		pset:value 0.0
+		lv2:symbol "freq" ;
+		pset:value 20.0
+	] , [
+		lv2:symbol "gain" ;
+		pset:value 1.48438048
+	] , [
+		lv2:symbol "noClip" ;
+		pset:value true
 	] .
 
