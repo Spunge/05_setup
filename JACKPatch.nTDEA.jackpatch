@@ -12,22 +12,22 @@ Non-Mixer.nSOHG (drone):port6/out-1      |> Non-Mixer.nSOHG (bus):drone/in-1
 Non-Mixer.nSOHG (drone):port6/out-2      |> Non-Mixer.nSOHG (bus):drone/in-2
 Non-Mixer.nSOHG (drone):port7/out-1      |> Non-Mixer.nSOHG (bus):drone/in-1
 Non-Mixer.nSOHG (drone):port7/out-2      |> Non-Mixer.nSOHG (bus):drone/in-2
-Non-Mixer.nSOHG (percussion):Port4/out-1 |> Non-Mixer.nSOHG (bus):percussion/in-1
-Non-Mixer.nSOHG (percussion):Port4/out-2 |> Non-Mixer.nSOHG (bus):percussion/in-2
-Non-Mixer.nSOHG (percussion):port0/out-1 |> Non-Mixer.nSOHG (bus):percussion/in-1
+Non-Mixer.nSOHG (percussion):Port4/out-1 |> Synthpod-JACK.nMSLI:#5697_audio_sink_1
+Non-Mixer.nSOHG (percussion):Port4/out-2 |> Synthpod-JACK.nMSLI:#5697_audio_sink_2
 Non-Mixer.nSOHG (percussion):port0/out-1 |> Synthpod-JACK.nJAJT:#88644_audio_sink_1
+Non-Mixer.nSOHG (percussion):port0/out-1 |> Synthpod-JACK.nMSLI:#5697_audio_sink_1
 Non-Mixer.nSOHG (percussion):port0/out-1 |> Synthpod-JACK.nQWRM:#88644_audio_sink_1
 Non-Mixer.nSOHG (percussion):port0/out-1 |> Synthpod-JACK.nRIEG:#88644_audio_sink_1
-Non-Mixer.nSOHG (percussion):port0/out-2 |> Non-Mixer.nSOHG (bus):percussion/in-2
 Non-Mixer.nSOHG (percussion):port0/out-2 |> Synthpod-JACK.nJAJT:#88644_audio_sink_2
+Non-Mixer.nSOHG (percussion):port0/out-2 |> Synthpod-JACK.nMSLI:#5697_audio_sink_2
 Non-Mixer.nSOHG (percussion):port0/out-2 |> Synthpod-JACK.nQWRM:#88644_audio_sink_2
 Non-Mixer.nSOHG (percussion):port0/out-2 |> Synthpod-JACK.nRIEG:#88644_audio_sink_2
-Non-Mixer.nSOHG (percussion):port1/out-1 |> Non-Mixer.nSOHG (bus):percussion/in-1
-Non-Mixer.nSOHG (percussion):port1/out-2 |> Non-Mixer.nSOHG (bus):percussion/in-2
-Non-Mixer.nSOHG (percussion):port2/out-1 |> Non-Mixer.nSOHG (bus):percussion/in-1
-Non-Mixer.nSOHG (percussion):port2/out-2 |> Non-Mixer.nSOHG (bus):percussion/in-2
-Non-Mixer.nSOHG (percussion):port3/out-1 |> Non-Mixer.nSOHG (bus):percussion/in-1
-Non-Mixer.nSOHG (percussion):port3/out-2 |> Non-Mixer.nSOHG (bus):percussion/in-2
+Non-Mixer.nSOHG (percussion):port1/out-1 |> Synthpod-JACK.nMSLI:#5697_audio_sink_1
+Non-Mixer.nSOHG (percussion):port1/out-2 |> Synthpod-JACK.nMSLI:#5697_audio_sink_2
+Non-Mixer.nSOHG (percussion):port2/out-1 |> Synthpod-JACK.nMSLI:#5697_audio_sink_1
+Non-Mixer.nSOHG (percussion):port2/out-2 |> Synthpod-JACK.nMSLI:#5697_audio_sink_2
+Non-Mixer.nSOHG (percussion):port3/out-1 |> Synthpod-JACK.nMSLI:#5697_audio_sink_1
+Non-Mixer.nSOHG (percussion):port3/out-2 |> Synthpod-JACK.nMSLI:#5697_audio_sink_2
 Non-Mixer.nSOHG/master:out-1             |> system:playback_1
 Non-Mixer.nSOHG/master:out-2             |> system:playback_2
 Octothorpe:apc_out                       |> system:midi_playback_3
@@ -57,6 +57,8 @@ Synthpod-JACK.nJAJT:#86729_event_source  |> Octothorpe:control_in
 Synthpod-JACK.nKPMC:#86729_audio_source_1 |> Non-Mixer.nSOHG (percussion):Port4/in-1
 Synthpod-JACK.nKPMC:#86729_audio_source_2 |> Non-Mixer.nSOHG (percussion):Port4/in-2
 Synthpod-JACK.nKPMC:#86729_event_source  |> Octothorpe:control_in
+Synthpod-JACK.nMSLI:#47646_audio_source_1 |> Non-Mixer.nSOHG (bus):percussion/in-1
+Synthpod-JACK.nMSLI:#47646_audio_source_2 |> Non-Mixer.nSOHG (bus):percussion/in-2
 Synthpod-JACK.nQLOQ:#86729_audio_source_1 |> Non-Mixer.nSOHG (percussion):port2/in-1
 Synthpod-JACK.nQLOQ:#86729_audio_source_2 |> Non-Mixer.nSOHG (percussion):port2/in-2
 Synthpod-JACK.nQLOQ:#86729_event_source  |> Octothorpe:control_in

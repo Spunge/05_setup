@@ -49,10 +49,15 @@
 				spod:modulePositionX "689.0"^^xsd:float ;
 				spod:modulePositionY "286.0"^^xsd:float
 			] ;
+			<urn:uuid:0a4fd0d5-fe1b-459f-8c0b-72dbadd60940> [
+				a <http://www.openavproductions.com/artyfx#filta> ;
+				spod:modulePositionX "922.0"^^xsd:float ;
+				spod:modulePositionY "285.0"^^xsd:float
+			] ;
 			<urn:uuid:416360c5-6738-4df8-b083-de9a3550b80f> [
 				a spod:sink ;
-				spod:modulePositionX "894.0"^^xsd:float ;
-				spod:modulePositionY "158.0"^^xsd:float
+				spod:modulePositionX "1060.0"^^xsd:float ;
+				spod:modulePositionY "133.0"^^xsd:float
 			]
 		] ;
 		spod:connectionList [
@@ -131,6 +136,24 @@
 					spod:sinkSymbol "__automation__in__" ;
 					param:gain "1.0"^^xsd:float
 				] [
+					spod:sourceModule <urn:uuid:cc07edd3-954e-46b2-a396-553c9d0c0650> ;
+					spod:sourceSymbol "out_l" ;
+					spod:sinkModule <urn:uuid:0a4fd0d5-fe1b-459f-8c0b-72dbadd60940> ;
+					spod:sinkSymbol "in_left" ;
+					param:gain "1.0"^^xsd:float
+				] [
+					spod:sourceModule <urn:uuid:cc07edd3-954e-46b2-a396-553c9d0c0650> ;
+					spod:sourceSymbol "out_r" ;
+					spod:sinkModule <urn:uuid:0a4fd0d5-fe1b-459f-8c0b-72dbadd60940> ;
+					spod:sinkSymbol "in_right" ;
+					param:gain "1.0"^^xsd:float
+				] [
+					spod:sourceModule <urn:uuid:d977c817-5514-4adb-b282-98b14fb4948f> ;
+					spod:sourceSymbol "event_source" ;
+					spod:sinkModule <urn:uuid:0a4fd0d5-fe1b-459f-8c0b-72dbadd60940> ;
+					spod:sinkSymbol "__automation__in__" ;
+					param:gain "1.0"^^xsd:float
+				] [
 					spod:sourceModule <urn:uuid:80eddcf7-8916-4fb5-8859-27c8231f388d> ;
 					spod:sourceSymbol "__automation__out__" ;
 					spod:sinkModule <urn:uuid:416360c5-6738-4df8-b083-de9a3550b80f> ;
@@ -149,14 +172,20 @@
 					spod:sinkSymbol "event_sink" ;
 					param:gain "1.0"^^xsd:float
 				] [
-					spod:sourceModule <urn:uuid:cc07edd3-954e-46b2-a396-553c9d0c0650> ;
-					spod:sourceSymbol "out_l" ;
+					spod:sourceModule <urn:uuid:0a4fd0d5-fe1b-459f-8c0b-72dbadd60940> ;
+					spod:sourceSymbol "__automation__out__" ;
+					spod:sinkModule <urn:uuid:416360c5-6738-4df8-b083-de9a3550b80f> ;
+					spod:sinkSymbol "event_sink" ;
+					param:gain "1.0"^^xsd:float
+				] [
+					spod:sourceModule <urn:uuid:0a4fd0d5-fe1b-459f-8c0b-72dbadd60940> ;
+					spod:sourceSymbol "out_left" ;
 					spod:sinkModule <urn:uuid:416360c5-6738-4df8-b083-de9a3550b80f> ;
 					spod:sinkSymbol "audio_sink_1" ;
 					param:gain "1.0"^^xsd:float
 				] [
-					spod:sourceModule <urn:uuid:cc07edd3-954e-46b2-a396-553c9d0c0650> ;
-					spod:sourceSymbol "out_r" ;
+					spod:sourceModule <urn:uuid:0a4fd0d5-fe1b-459f-8c0b-72dbadd60940> ;
+					spod:sourceSymbol "out_right" ;
 					spod:sinkModule <urn:uuid:416360c5-6738-4df8-b083-de9a3550b80f> ;
 					spod:sinkSymbol "audio_sink_2" ;
 					param:gain "1.0"^^xsd:float
@@ -202,20 +231,35 @@
 					spod:nodePositionX "571.0"^^xsd:float ;
 					spod:nodePositionY "363.0"^^xsd:float
 				] [
-					spod:sourceModule <urn:uuid:1d96a3b2-769b-4ad8-ac72-89713fcaf870> ;
-					spod:sinkModule <urn:uuid:416360c5-6738-4df8-b083-de9a3550b80f> ;
-					spod:nodePositionX "772.5"^^xsd:float ;
-					spod:nodePositionY "136.0"^^xsd:float
+					spod:sourceModule <urn:uuid:d977c817-5514-4adb-b282-98b14fb4948f> ;
+					spod:sinkModule <urn:uuid:0a4fd0d5-fe1b-459f-8c0b-72dbadd60940> ;
+					spod:nodePositionX "805.5"^^xsd:float ;
+					spod:nodePositionY "226.5"^^xsd:float
 				] [
-					spod:sourceModule <urn:uuid:80eddcf7-8916-4fb5-8859-27c8231f388d> ;
-					spod:sinkModule <urn:uuid:416360c5-6738-4df8-b083-de9a3550b80f> ;
+					spod:sourceModule <urn:uuid:cc07edd3-954e-46b2-a396-553c9d0c0650> ;
+					spod:sinkModule <urn:uuid:0a4fd0d5-fe1b-459f-8c0b-72dbadd60940> ;
 					spod:nodePositionX "0.0"^^xsd:float ;
 					spod:nodePositionY "0.0"^^xsd:float
 				] [
+					spod:sourceModule <urn:uuid:1d96a3b2-769b-4ad8-ac72-89713fcaf870> ;
+					spod:sinkModule <urn:uuid:416360c5-6738-4df8-b083-de9a3550b80f> ;
+					spod:nodePositionX "939.5"^^xsd:float ;
+					spod:nodePositionY "94.0"^^xsd:float
+				] [
+					spod:sourceModule <urn:uuid:80eddcf7-8916-4fb5-8859-27c8231f388d> ;
+					spod:sinkModule <urn:uuid:416360c5-6738-4df8-b083-de9a3550b80f> ;
+					spod:nodePositionX "927.5"^^xsd:float ;
+					spod:nodePositionY "141.0"^^xsd:float
+				] [
 					spod:sourceModule <urn:uuid:cc07edd3-954e-46b2-a396-553c9d0c0650> ;
 					spod:sinkModule <urn:uuid:416360c5-6738-4df8-b083-de9a3550b80f> ;
-					spod:nodePositionX "814.5"^^xsd:float ;
-					spod:nodePositionY "318.0"^^xsd:float
+					spod:nodePositionX "946.5"^^xsd:float ;
+					spod:nodePositionY "202.0"^^xsd:float
+				] [
+					spod:sourceModule <urn:uuid:0a4fd0d5-fe1b-459f-8c0b-72dbadd60940> ;
+					spod:sinkModule <urn:uuid:416360c5-6738-4df8-b083-de9a3550b80f> ;
+					spod:nodePositionX "1004.0"^^xsd:float ;
+					spod:nodePositionY "219.0"^^xsd:float
 				]
 			)
 		] ;
@@ -606,11 +650,23 @@
 					spod:sourceEnabled true ;
 					spod:sinkEnabled true ;
 					spod:sinkSymbol "makeup"
+				] [
+					a midi:Controller ;
+					spod:sinkModule <urn:uuid:0a4fd0d5-fe1b-459f-8c0b-72dbadd60940> ;
+					midi:channel "8"^^xsd:int ;
+					midi:controllerNumber "5"^^xsd:int ;
+					spod:sourceMinimum "0.0"^^xsd:double ;
+					spod:sourceMaximum "127.0"^^xsd:double ;
+					spod:sinkMinimum "0.0"^^xsd:double ;
+					spod:sinkMaximum "1.0"^^xsd:double ;
+					spod:sourceEnabled true ;
+					spod:sinkEnabled true ;
+					spod:sinkSymbol "frequency_control"
 				]
 			)
 		] ;
-		spod:graphPositionX "-613.0"^^xsd:float ;
-		spod:graphPositionY "-123.0"^^xsd:float ;
+		spod:graphPositionX "161.0"^^xsd:float ;
+		spod:graphPositionY "42.0"^^xsd:float ;
 		spod:columnEnabled true ;
 		spod:rowEnabled true
 	] .

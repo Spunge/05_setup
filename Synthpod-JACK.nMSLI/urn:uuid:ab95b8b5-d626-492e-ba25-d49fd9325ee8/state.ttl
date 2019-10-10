@@ -8,13 +8,22 @@
 
 <>
 	a pset:Preset ;
-	lv2:appliesTo <http://www.openavproductions.com/artyfx#filta> ;
+	lv2:appliesTo <http://gareus.org/oss/lv2/dpl#stereo> ;
 	rdfs:label "state" ;
 	lv2:port [
-		lv2:symbol "active" ;
+		lv2:symbol "enable" ;
 		pset:value true
 	] , [
-		lv2:symbol "frequency_control" ;
-		pset:value 0.49606299
+		lv2:symbol "gain" ;
+		pset:value 3.19999981
+	] , [
+		lv2:symbol "release" ;
+		pset:value 0.001
+	] , [
+		lv2:symbol "threshold" ;
+		pset:value -6.19999981
+	] ;
+	state:state [
+		<http://gareus.org/oss/lv2/dpl#uiscale> "1.0"^^xsd:float
 	] .
 

@@ -8,13 +8,19 @@
 
 <>
 	a pset:Preset ;
-	lv2:appliesTo <http://www.openavproductions.com/artyfx#filta> ;
+	lv2:appliesTo <http://open-music-kontrollers.ch/lv2/synthpod#sink> ;
 	rdfs:label "state" ;
 	lv2:port [
-		lv2:symbol "active" ;
-		pset:value true
+		lv2:symbol "control_sink_1" ;
+		pset:value 0.0
 	] , [
-		lv2:symbol "frequency_control" ;
-		pset:value 0.49606299
+		lv2:symbol "control_sink_2" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "control_sink_3" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "control_sink_4" ;
+		pset:value 0.0
 	] .
 

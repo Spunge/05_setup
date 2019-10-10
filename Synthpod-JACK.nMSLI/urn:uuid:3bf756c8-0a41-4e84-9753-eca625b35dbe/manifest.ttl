@@ -6,15 +6,8 @@
 @prefix state: <http://lv2plug.in/ns/ext/state#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<>
+<state.ttl>
+	lv2:appliesTo <http://open-music-kontrollers.ch/lv2/synthpod#source> ;
 	a pset:Preset ;
-	lv2:appliesTo <http://www.openavproductions.com/artyfx#filta> ;
-	rdfs:label "state" ;
-	lv2:port [
-		lv2:symbol "active" ;
-		pset:value true
-	] , [
-		lv2:symbol "frequency_control" ;
-		pset:value 0.49606299
-	] .
+	rdfs:seeAlso <state.ttl> .
 
