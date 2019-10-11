@@ -15,7 +15,7 @@
 		pset:value 1.16850388
 	] , [
 		lv2:symbol "HPfreq" ;
-		pset:value 161.85038757
+		pset:value 103.03149414
 	] , [
 		lv2:symbol "HSfreq" ;
 		pset:value 5133.85839844

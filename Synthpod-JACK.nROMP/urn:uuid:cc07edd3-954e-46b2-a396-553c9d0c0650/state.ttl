@@ -51,7 +51,7 @@
 		pset:value 377.96087646
 	] , [
 		lv2:symbol "sc_level" ;
-		pset:value 15.63385868
+		pset:value 6.06139278
 	] , [
 		lv2:symbol "sc_listen" ;
 		pset:value false
@@ -66,6 +66,6 @@
 		pset:value 1
 	] , [
 		lv2:symbol "threshold" ;
-		pset:value 0.18190207
+		pset:value 0.19763473
 	] .
 

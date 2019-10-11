@@ -12,7 +12,7 @@
 	Mixer_Strip 0x30 create :name "port1" :width "narrow" :tab "fader" :color 86062034 :gain_mode 0 :mute_mode 0 :group 0x14 :auto_input "" :manual_connection 0
 	Chain 0x31 create :strip 0x30 :tab "chain"
 	JACK_Module 0x32 create :parameter_values "0.000000:2.000000" :is_default 1 :chain 0x31 :active 1
-	Gain_Module 0x33 create :parameter_values "-10.157482:0.000000" :is_default 1 :chain 0x31 :active 1
+	Gain_Module 0x33 create :parameter_values "-4.173225:0.000000" :is_default 1 :chain 0x31 :active 1
 	Meter_Module 0x34 create :is_default 1 :chain 0x31 :active 1
 	JACK_Module 0x35 create :parameter_values "2.000000:0.000000" :is_default 1 :chain 0x31 :active 1
 	Mixer_Strip 0x3C create :name "port2" :width "narrow" :tab "fader" :color 866675530 :gain_mode 0 :mute_mode 0 :group 0x14 :auto_input "" :manual_connection 0
@@ -42,13 +42,13 @@
 	Mixer_Strip 0x55 create :name "port5" :width "narrow" :tab "fader" :color 1793801725 :gain_mode 0 :mute_mode 0 :group 0x67 :auto_input "" :manual_connection 0
 	Chain 0x56 create :strip 0x55 :tab "chain"
 	JACK_Module 0x57 create :parameter_values "0.000000:2.000000" :is_default 1 :chain 0x56 :active 1
-	Gain_Module 0x58 create :parameter_values "-8.960632:0.000000" :is_default 1 :chain 0x56 :active 1
+	Gain_Module 0x58 create :parameter_values "-2.377953:0.000000" :is_default 1 :chain 0x56 :active 1
 	Meter_Module 0x59 create :is_default 1 :chain 0x56 :active 1
 	JACK_Module 0x5A create :parameter_values "2.000000:0.000000" :is_default 1 :chain 0x56 :active 1
 	Mixer_Strip 0x5B create :name "port6" :width "narrow" :tab "fader" :color 901114765 :gain_mode 0 :mute_mode 0 :group 0x67 :auto_input "" :manual_connection 0
 	Chain 0x5C create :strip 0x5B :tab "chain"
 	JACK_Module 0x5D create :parameter_values "0.000000:2.000000" :is_default 1 :chain 0x5C :active 1
-	Gain_Module 0x5E create :parameter_values "-10.157482:0.000000" :is_default 1 :chain 0x5C :active 1
+	Gain_Module 0x5E create :parameter_values "0.614174:0.000000" :is_default 1 :chain 0x5C :active 1
 	Meter_Module 0x5F create :is_default 1 :chain 0x5C :active 1
 	JACK_Module 0x60 create :parameter_values "2.000000:0.000000" :is_default 1 :chain 0x5C :active 1
 	Mixer_Strip 0x61 create :name "port7" :width "narrow" :tab "fader" :color 1760660302 :gain_mode 0 :mute_mode 0 :group 0x67 :auto_input "" :manual_connection 0
