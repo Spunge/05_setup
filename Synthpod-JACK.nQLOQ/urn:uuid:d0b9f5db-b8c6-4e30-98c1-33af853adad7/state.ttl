@@ -27,7 +27,7 @@
 		pset:value 0.0
 	] , [
 		lv2:symbol "release" ;
-		pset:value 0.31062993
+		pset:value 0.03
 	] , [
 		lv2:symbol "threshold" ;
 		pset:value -36.14173126

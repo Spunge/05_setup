@@ -15,7 +15,7 @@
 		pset:value 0.74015749
 	] , [
 		lv2:symbol "attack" ;
-		pset:value 0.00489764
+		pset:value 0.01
 	] , [
 		lv2:symbol "enable" ;
 		pset:value true

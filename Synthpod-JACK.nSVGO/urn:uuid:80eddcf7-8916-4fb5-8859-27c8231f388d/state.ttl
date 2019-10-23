@@ -21,7 +21,7 @@
 		pset:value 54.33070755
 	] , [
 		lv2:symbol "dry_level" ;
-		pset:value 97.63779449
+		pset:value 100.0
 	] , [
 		lv2:symbol "early_damp" ;
 		pset:value 6078.74023438
@@ -48,10 +48,10 @@
 		pset:value 86.61417389
 	] , [
 		lv2:symbol "predelay" ;
-		pset:value 8.66141701
+		pset:value 0.0
 	] , [
 		lv2:symbol "size" ;
-		pset:value 23.11811066
+		pset:value 8.0
 	] , [
 		lv2:symbol "spin" ;
 		pset:value 0.40000001

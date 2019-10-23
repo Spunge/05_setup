@@ -48,7 +48,7 @@
 		pset:value 7.43307066
 	] , [
 		lv2:symbol "release" ;
-		pset:value 377.96087646
+		pset:value 566.9362793
 	] , [
 		lv2:symbol "sc_level" ;
 		pset:value 15.63385868
@@ -66,6 +66,6 @@
 		pset:value 1
 	] , [
 		lv2:symbol "threshold" ;
-		pset:value 0.18190207
+		pset:value 0.2212337
 	] .
 

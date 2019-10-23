@@ -32,8 +32,7 @@
 			<urn:uuid:15ad314f-aeba-4064-bb66-3dcc64c49692> [
 				a <http://zynaddsubfx.sourceforge.net> ;
 				spod:modulePositionX "-13.0"^^xsd:float ;
-				spod:modulePositionY "278.0"^^xsd:float ;
-				ui:ui <http://zynaddsubfx.sourceforge.net#UI>
+				spod:modulePositionY "278.0"^^xsd:float
 			] ;
 			<urn:uuid:1d96a3b2-769b-4ad8-ac72-89713fcaf870> [
 				a <http://gareus.org/oss/lv2/fil4#stereo> ;
@@ -610,8 +609,8 @@
 				]
 			)
 		] ;
-		spod:graphPositionX "-362.0"^^xsd:float ;
-		spod:graphPositionY "-6.0"^^xsd:float ;
+		spod:graphPositionX "138.0"^^xsd:float ;
+		spod:graphPositionY "-16.0"^^xsd:float ;
 		spod:columnEnabled false ;
 		spod:rowEnabled false
 	] .

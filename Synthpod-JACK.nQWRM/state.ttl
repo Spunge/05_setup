@@ -609,8 +609,8 @@
 				]
 			)
 		] ;
-		spod:graphPositionX "-308.0"^^xsd:float ;
-		spod:graphPositionY "-163.0"^^xsd:float ;
+		spod:graphPositionX "-113.0"^^xsd:float ;
+		spod:graphPositionY "15.0"^^xsd:float ;
 		spod:columnEnabled true ;
 		spod:rowEnabled true
 	] .

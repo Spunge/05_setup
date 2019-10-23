@@ -1,0 +1,81 @@
+@prefix midi: <http://lv2plug.in/ns/ext/midi#> .
+@prefix atom: <http://lv2plug.in/ns/ext/atom#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix lv2: <http://lv2plug.in/ns/lv2core#> .
+@prefix pset: <http://lv2plug.in/ns/ext/presets#> .
+@prefix param: <http://lv2plug.in/ns/ext/parameters#> .
+@prefix state: <http://lv2plug.in/ns/ext/state#> .
+@prefix ui: <http://lv2plug.in/ns/extensions/ui#> .
+@prefix spod: <http://open-music-kontrollers.ch/lv2/synthpod#> .
+
+<file:///tmp/base/>
+	a pset:Preset ;
+	lv2:appliesTo spod:stereo ,
+		spod:monoatom ;
+	rdfs:label "/home/johan/NSM Sessions/05_setup/Synthpod-JACK.nSOAV" ;
+	state:state [
+		lv2:minorVersion "1"^^xsd:int ;
+		lv2:microVersion "6137"^^xsd:int ;
+		spod:moduleList [
+			<urn:uuid:2ce02f99-cd57-45f0-8e8e-92efe6ca4bd6> [
+				a spod:source ;
+				spod:modulePositionX "200.0"^^xsd:float ;
+				spod:modulePositionY "50.0"^^xsd:float
+			] ;
+			<urn:uuid:35520d02-a962-4337-b185-26d74f71ad2f> [
+				a spod:midisplitter ;
+				spod:modulePositionX "503.0"^^xsd:float ;
+				spod:modulePositionY "126.0"^^xsd:float
+			] ;
+			<urn:uuid:e0bae646-f308-42d3-9cae-520f48552374> [
+				a spod:sink ;
+				spod:modulePositionX "858.0"^^xsd:float ;
+				spod:modulePositionY "163.0"^^xsd:float
+			]
+		] ;
+		spod:connectionList [
+			a atom:Tuple ;
+			rdf:value (
+				[
+					spod:sourceModule <urn:uuid:2ce02f99-cd57-45f0-8e8e-92efe6ca4bd6> ;
+					spod:sourceSymbol "event_source" ;
+					spod:sinkModule <urn:uuid:35520d02-a962-4337-b185-26d74f71ad2f> ;
+					spod:sinkSymbol "midi_in" ;
+					param:gain "1.0"^^xsd:float
+				] [
+					spod:sourceModule <urn:uuid:35520d02-a962-4337-b185-26d74f71ad2f> ;
+					spod:sourceSymbol "midi_out_10" ;
+					spod:sinkModule <urn:uuid:e0bae646-f308-42d3-9cae-520f48552374> ;
+					spod:sinkSymbol "event_sink" ;
+					param:gain "1.0"^^xsd:float
+				]
+			)
+		] ;
+		spod:nodeList [
+			a atom:Tuple ;
+			rdf:value (
+				[
+					spod:sourceModule <urn:uuid:2ce02f99-cd57-45f0-8e8e-92efe6ca4bd6> ;
+					spod:sinkModule <urn:uuid:35520d02-a962-4337-b185-26d74f71ad2f> ;
+					spod:nodePositionX "0.0"^^xsd:float ;
+					spod:nodePositionY "0.0"^^xsd:float
+				] [
+					spod:sourceModule <urn:uuid:35520d02-a962-4337-b185-26d74f71ad2f> ;
+					spod:sinkModule <urn:uuid:e0bae646-f308-42d3-9cae-520f48552374> ;
+					spod:nodePositionX "0.0"^^xsd:float ;
+					spod:nodePositionY "0.0"^^xsd:float
+				]
+			)
+		] ;
+		spod:automationList [
+			a atom:Tuple ;
+			rdf:value ()
+		] ;
+		spod:graphPositionX "0.0"^^xsd:float ;
+		spod:graphPositionY "0.0"^^xsd:float ;
+		spod:columnEnabled false ;
+		spod:rowEnabled true
+	] .
+

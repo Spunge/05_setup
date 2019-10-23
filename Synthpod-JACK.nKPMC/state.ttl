@@ -523,8 +523,8 @@
 				]
 			)
 		] ;
-		spod:graphPositionX "-292.0"^^xsd:float ;
-		spod:graphPositionY "-113.0"^^xsd:float ;
+		spod:graphPositionX "-4.0"^^xsd:float ;
+		spod:graphPositionY "-57.0"^^xsd:float ;
 		spod:columnEnabled true ;
 		spod:rowEnabled true
 	] .

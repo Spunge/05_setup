@@ -15,7 +15,7 @@
 		pset:value 348.61602783
 	] , [
 		lv2:symbol "decay" ;
-		pset:value 2.90629911
+		pset:value 0.1
 	] , [
 		lv2:symbol "diffuse" ;
 		pset:value 62.99212646
@@ -42,7 +42,7 @@
 		pset:value 5842.51953125
 	] , [
 		lv2:symbol "late_level" ;
-		pset:value 40.15748215
+		pset:value 0.0
 	] , [
 		lv2:symbol "low_boost" ;
 		pset:value 51.96850204

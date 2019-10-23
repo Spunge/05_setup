@@ -15,10 +15,10 @@
 		pset:value 123.2984314
 	] , [
 		lv2:symbol "decay" ;
-		pset:value 0.56771654
+		pset:value 1.8149606
 	] , [
 		lv2:symbol "diffuse" ;
-		pset:value 67.71653748
+		pset:value 70.07874298
 	] , [
 		lv2:symbol "dry_level" ;
 		pset:value 100.0
@@ -42,7 +42,7 @@
 		pset:value 3244.09448242
 	] , [
 		lv2:symbol "late_level" ;
-		pset:value 7.08661413
+		pset:value 61.41732407
 	] , [
 		lv2:symbol "low_boost" ;
 		pset:value 49.60630035
@@ -51,13 +51,13 @@
 		pset:value 92.91338348
 	] , [
 		lv2:symbol "size" ;
-		pset:value 23.11811066
+		pset:value 29.16535378
 	] , [
 		lv2:symbol "spin" ;
 		pset:value 0.40000001
 	] , [
 		lv2:symbol "wander" ;
-		pset:value 80.31496429
+		pset:value 85.03936768
 	] , [
 		lv2:symbol "width" ;
 		pset:value 64.1732254

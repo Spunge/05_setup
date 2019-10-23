@@ -1,3 +1,5 @@
+Firefox Developer Edition:AudioStream_0_out_0 |> system:playback_1
+Firefox Developer Edition:AudioStream_0_out_1 |> system:playback_2
 Non-Mixer.nSOHG (bass):port10/out-1      |> Non-Mixer.nSOHG (bus):bass/in-1
 Non-Mixer.nSOHG (bass):port10/out-2      |> Non-Mixer.nSOHG (bus):bass/in-2
 Non-Mixer.nSOHG (bass):port11/out-1      |> Non-Mixer.nSOHG (bus):bass/in-1
@@ -100,5 +102,7 @@ samplv1.nHAUG:out_1                      |> Synthpod-JACK.nRNFD:#88644_audio_sin
 samplv1.nHAUG:out_2                      |> Synthpod-JACK.nRNFD:#88644_audio_sink_2
 samplv1.nOBVL:out_1                      |> Synthpod-JACK.nSVGO:#88644_audio_sink_1
 samplv1.nOBVL:out_2                      |> Synthpod-JACK.nSVGO:#88644_audio_sink_2
-system:midi_capture_1                    |> Octothorpe:sequence_in
+system:capture_1                         |> Non-Mixer.nSOHG (bass):port9/in-1
+system:capture_1                         |> Non-Mixer.nSOHG (bass):port9/in-2
 system:midi_capture_5                    |> Octothorpe:apc_in
+system:midi_capture_6                    |> Octothorpe:sequence_in
